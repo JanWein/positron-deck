@@ -1,0 +1,9 @@
+Control Positron from your Stream Deck with 192 configurable shortcut actions. Run R or Python code, inspect data and plots, switch layouts, work with Git, or run a sequence of steps from one button. Positron Deck is free and open source under the MIT license.
+
+Drag actions onto buttons in the Stream Deck app. Default shortcuts are included, and each button can use an alternative or a custom shortcut. Six built-in workflows cover tasks such as saving and running a script or preparing a workspace for review. Eight custom slots let you define your own workflows in the IDE extension.
+
+Requires Windows 10 or later, Stream Deck 7.1 or later, and the matching Positron Deck IDE extension. Install that extension in Positron Desktop or your remote Positron session in Workbench. Some actions also work in VS Code; Positron-specific features depend on your installed version and active view.
+
+Keep the intended IDE window or browser tab focused. The plugin sends keyboard shortcuts, with no direct network bridge to the IDE. Buttons do not display live Git, runtime or test status.
+
+Independent project; not affiliated with Posit or Elgato.

@@ -1,0 +1,41 @@
+{
+  "name": "Positron Deck",
+  "version": "0.2.0",
+  "price": "Free",
+  "license": "MIT",
+  "author": "Jan-Hendrik Weinert",
+  "website": "https://janwein.github.io/positron-deck/",
+  "support": "https://github.com/JanWein/positron-deck/issues",
+  "source": "https://github.com/JanWein/positron-deck",
+  "setup": "https://janwein.github.io/positron-deck/#setup",
+  "openVSX": {
+    "publisher": "positron-deck",
+    "name": "positron-deck",
+    "artifact": "positron-deck-0.2.0.vsix",
+    "status": "not published",
+    "listingUrl": null,
+    "sha256": "350fb7aadc5b06a83317860533c2f01a2e507ee795e0bba69c8479bf4265a01f"
+  },
+  "elgato": {
+    "uuid": "org.positron-deck.shortcuts",
+    "artifact": "org.positron-deck.shortcuts.streamDeckPlugin",
+    "status": "not submitted",
+    "listingUrl": null,
+    "descriptionFile": "elgato-description.txt",
+    "icon": "app-icon.png",
+    "thumbnail": "thumbnail.png",
+    "gallery": [
+      "gallery-actions.png",
+      "gallery-workflows.png",
+      "gallery-setup.png"
+    ],
+    "sha256": "23683d75a50c5925743cd35376b61d25416e7ceb2f3aab1b53c701ae922493dd"
+  },
+  "maker": {
+    "name": "Jan-Hendrik Weinert",
+    "handle": "JanWein",
+    "region": "DE",
+    "github": "https://github.com/JanWein",
+    "website": "https://janweinert.com"
+  }
+}
