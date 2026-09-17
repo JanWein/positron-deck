@@ -1,0 +1,100 @@
+name: Build, test and release
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+permissions:
+  contents: read
+jobs:
+  verify:
+    permissions:
+      contents: write
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Import initial reviewed source archive
+        if: hashFiles('source-bootstrap.zip') != ''
+        shell: bash
+        run: |
+          python - <<'PYTHON'
+          import zipfile, pathlib
+          with zipfile.ZipFile('source-bootstrap.zip') as archive:
+              for item in archive.infolist():
+                  path = pathlib.PurePosixPath(item.filename)
+                  if path.is_absolute() or '..' in path.parts or '.git' in path.parts:
+                      raise SystemExit('Invalid source path')
+                  if item.filename.startswith('.github/workflows/'):
+                      continue
+                  archive.extract(item)
+          PYTHON
+          rm source-bootstrap.zip
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add .
+          git commit -m "Import Positron Deck 0.2.0 source and documentation"
+          git push
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 24
+          cache: npm
+          cache-dependency-path: |
+            extension/package-lock.json
+            streamdeck/package-lock.json
+      - run: npm --prefix extension ci
+      - run: npm --prefix streamdeck ci
+      - run: npm run lint
+      - run: npm test
+      - name: Check generated files are committed
+        run: git diff --exit-code
+      - run: npm run package
+      - uses: actions/upload-pages-artifact@v3
+        if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+        with:
+          path: docs
+      - uses: actions/upload-artifact@v4
+        with:
+          name: positron-deck-installers
+          path: |
+            extension/*.vsix
+            streamdeck/dist/*.streamDeckPlugin
+          if-no-files-found: error
+  pages:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      pages: write
+      id-token: write
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/deploy-pages@v4
+        id: deployment
+  release:
+    if: github.event_name != 'pull_request' && github.ref == 'refs/heads/main'
+    needs: verify
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          ref: main
+      - uses: actions/download-artifact@v4
+        with:
+          name: positron-deck-installers
+          path: installers
+      - name: Publish version if it does not already exist
+        env:
+          GH_TOKEN: ${{ github.token }}
+        shell: bash
+        run: |
+          version=$(node -p "require('./package.json').version")
+          tag="v$version"
+          if gh release view "$tag" >/dev/null 2>&1; then
+            echo "Release already exists; keeping published assets unchanged."
+          else
+            gh release create "$tag" installers/extension/*.vsix installers/streamdeck/dist/*.streamDeckPlugin --target "$(git rev-parse HEAD)" --title "Positron Deck $version" --notes-file RELEASE_NOTES.md
+          fi
