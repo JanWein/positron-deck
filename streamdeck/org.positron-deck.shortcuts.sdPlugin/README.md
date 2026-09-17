@@ -1,5 +1,7 @@
 # Positron Deck Stream Deck companion
 
+Marketplace status (17 September 2026): the IDE extension is under review on Open VSX; Stream Deck plugin 0.2.1 is pending Elgato review and will publish automatically after approval. Neither listing is public yet. Use the GitHub release installers while reviews are pending. Plugin 0.2.1 is a packaging update and works with IDE extension 0.2.0.
+
 192 ready-to-drag actions for Windows, synchronized with the Positron Deck IDE extension. Requires Windows 10+ x64/ARM64 and Stream Deck 7.1+.
 
 [Documentation and XL preview](https://janwein.github.io/positron-deck/) · [Download](https://github.com/JanWein/positron-deck/releases/latest)
