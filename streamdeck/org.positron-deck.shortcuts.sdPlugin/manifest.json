@@ -4,10 +4,10 @@
   "Name": "Positron Deck",
   "Category": "Positron Deck",
   "CategoryIcon": "imgs/category",
-  "Author": "Jan-Hendrik Weinert",
+  "Author": "janweinert",
   "Description": "Ready-to-drag hotkey actions for Positron Deck. Windows only; no direct connection to the IDE.",
-  "Version": "0.2.0.0",
-  "SDKVersion": 2,
+  "Version": "0.2.1.0",
+  "SDKVersion": 3,
   "Software": {
     "MinimumVersion": "7.1"
   },
