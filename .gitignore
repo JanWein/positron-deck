@@ -1,0 +1,11 @@
+node_modules
+out/
+dist/
+.test-build/
+.vscode-test/
+*.vsix
+*.streamDeckPlugin
+*.zip
+*.log
+.DS_Store
+streamdeck/org.positron-deck.shortcuts.sdPlugin/bin/

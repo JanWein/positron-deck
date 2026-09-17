@@ -1,0 +1,196 @@
+# Action reference
+
+Generated from `catalog/actions.json`. Host availability is checked at execution time. Positron actions may depend on the installed version or optional views.
+
+- **Run Selection or Line**: `ctrl+alt+shift+f13` → `positronDeck.runSelection`
+- **Test Project**: `ctrl+alt+shift+f14` → `positronDeck.test`
+- **Quarto: Render**: `ctrl+alt+shift+f15` → `positronDeck.render`
+- **Git: Stage All**: `ctrl+alt+shift+f16` → `positronDeck.gitStageAll`
+- **Git: Commit**: `ctrl+alt+shift+f17` → `positronDeck.gitCommit`
+- **Git: Pull**: `ctrl+alt+shift+f18` → `positronDeck.gitPull`
+- **Git: Push**: `ctrl+alt+shift+f19` → `positronDeck.gitPush`
+- **Deploy**: `ctrl+alt+shift+f20` → `positronDeck.deploy`
+- **Run File**: `ctrl+alt+shift+f21` → `positronDeck.runFile`
+- **Run App**: `ctrl+alt+shift+f22` → `positronDeck.runApp`
+- **Open Terminal**: `ctrl+alt+shift+f23` → `positronDeck.openTerminal`
+- **Open Console**: `ctrl+alt+shift+f24` → `positronDeck.openConsole`
+- **Command Palette**: `ctrl+shift+f13` → `positronDeck.commandPalette`
+- **Git: Sync**: `ctrl+shift+f14` → `positronDeck.gitSync`
+- **Git: Show Diff**: `ctrl+shift+f15` → `positronDeck.gitShowDiff`
+- **Git: Open History**: `ctrl+shift+f16` → `positronDeck.gitOpenLog`
+- **Open Source Control**: `ctrl+shift+f17` → `positronDeck.openSourceControl`
+- **Format Document**: `ctrl+shift+f18` → `positronDeck.format`
+- **R Package: Lint**: `ctrl+shift+f19` → `positronDeck.rLint`
+- **R Package: Check**: `ctrl+shift+f20` → `positronDeck.rCheck`
+- **R Package: Document**: `ctrl+shift+f21` → `positronDeck.rDocument`
+- **Quarto: Preview**: `ctrl+shift+f22` → `positronDeck.preview`
+- **Restart Runtime**: `ctrl+shift+f23` → `positronDeck.restartRuntime`
+- **Open Problems**: `ctrl+shift+f24` → `positronDeck.openProblems`
+- **Stop Execution**: `ctrl+alt+f13` → `positronDeck.stopExecution`
+- **Git: Checkout**: `ctrl+alt+f14` → `positronDeck.gitCheckout`
+- **Test Current File**: `ctrl+alt+f15` → `positronDeck.testCurrentFile`
+- **R Package: Test**: `ctrl+alt+f16` → `positronDeck.rTest`
+- **R Package: Load All**: `ctrl+alt+f17` → `positronDeck.rLoadAll`
+- **R Package: Style**: `ctrl+alt+f18` → `positronDeck.rStyle`
+- **Stop App**: `ctrl+alt+f19` → `positronDeck.stopApp`
+- **Show Log**: `ctrl+alt+f20` → `positronDeck.showLog`
+- **Explorer**: `ctrl+alt+shift+f1 a` → `positronDeck.openExplorer`
+- **Search in Files**: `ctrl+alt+shift+f1 b` → `positronDeck.openSearch`
+- **Extensions**: `ctrl+alt+shift+f1 c` → `positronDeck.openExtensions`
+- **Run and Debug**: `ctrl+alt+shift+f1 d` → `positronDeck.openDebug`
+- **Test Explorer**: `ctrl+alt+shift+f1 e` → `positronDeck.openTesting`
+- **Output**: `ctrl+alt+shift+f1 f` → `positronDeck.openOutput`
+- **Settings**: `ctrl+alt+shift+f1 g` → `positronDeck.openSettings`
+- **Keyboard Shortcuts**: `ctrl+alt+shift+f1 h` → `positronDeck.openKeybindings`
+- **Quick Open File**: `ctrl+alt+shift+f1 i` → `positronDeck.quickOpen`
+- **Symbols in File**: `ctrl+alt+shift+f1 j` → `positronDeck.goToSymbol`
+- **Go to Line**: `ctrl+alt+shift+f1 k` → `positronDeck.goToLine`
+- **Focus Editor**: `ctrl+alt+shift+f1 l` → `positronDeck.focusEditor`
+- **Next Editor**: `ctrl+alt+shift+f1 m` → `positronDeck.nextEditor`
+- **Previous Editor**: `ctrl+alt+shift+f1 n` → `positronDeck.previousEditor`
+- **Navigate Back**: `ctrl+alt+shift+f1 o` → `positronDeck.navigateBack`
+- **Navigate Forward**: `ctrl+alt+shift+f1 p` → `positronDeck.navigateForward`
+- **Reopen Closed Editor**: `ctrl+alt+shift+f1 q` → `positronDeck.reopenEditor`
+- **Recent Projects**: `ctrl+alt+shift+f1 r` → `positronDeck.openRecent`
+- **Data Connections**: `ctrl+alt+shift+f1 s` → `positronDeck.openDataConnections`
+- **Connections**: `ctrl+alt+shift+f1 t` → `positronDeck.openConnections`
+- **Variables**: `ctrl+alt+shift+f1 u` → `positronDeck.openVariables`
+- **Plots**: `ctrl+alt+shift+f1 v` → `positronDeck.openPlots`
+- **Help Pane**: `ctrl+alt+shift+f1 w` → `positronDeck.openHelp`
+- **Console History**: `ctrl+alt+shift+f1 x` → `positronDeck.openHistory`
+- **Viewer**: `ctrl+alt+shift+f1 y` → `positronDeck.openViewer`
+- **Packages**: `ctrl+alt+shift+f1 z` → `positronDeck.openPackages`
+- **Runtime Sessions**: `ctrl+alt+shift+f1 0` → `positronDeck.openSessions`
+- **Assistant Chat**: `ctrl+alt+shift+f1 1` → `positronDeck.openAssistant`
+- **Save File**: `ctrl+alt+shift+f1 2` → `positronDeck.saveFile`
+- **Save All**: `ctrl+alt+shift+f1 3` → `positronDeck.saveAll`
+- **New Untitled File**: `ctrl+alt+shift+f1 4` → `positronDeck.newFile`
+- **Close Editor**: `ctrl+alt+shift+f1 5` → `positronDeck.closeEditor`
+- **Find in File**: `ctrl+alt+shift+f1 6` → `positronDeck.findInFile`
+- **Replace in File**: `ctrl+alt+shift+f1 7` → `positronDeck.replaceInFile`
+- **Toggle Line Comment**: `ctrl+alt+shift+f1 8` → `positronDeck.commentLine`
+- **Toggle Block Comment**: `ctrl+alt+shift+f1 9` → `positronDeck.commentBlock`
+- **Duplicate Line Down**: `ctrl+alt+shift+f2 a` → `positronDeck.duplicateLine`
+- **Move Line Up**: `ctrl+alt+shift+f2 b` → `positronDeck.moveLineUp`
+- **Move Line Down**: `ctrl+alt+shift+f2 c` → `positronDeck.moveLineDown`
+- **Select Next Match**: `ctrl+alt+shift+f2 d` → `positronDeck.selectNextMatch`
+- **Select All Matches**: `ctrl+alt+shift+f2 e` → `positronDeck.selectAllMatches`
+- **Expand Selection**: `ctrl+alt+shift+f2 f` → `positronDeck.expandSelection`
+- **Shrink Selection**: `ctrl+alt+shift+f2 g` → `positronDeck.shrinkSelection`
+- **Rename Symbol**: `ctrl+alt+shift+f2 h` → `positronDeck.renameSymbol`
+- **Quick Fix**: `ctrl+alt+shift+f2 i` → `positronDeck.quickFix`
+- **Go to Definition**: `ctrl+alt+shift+f2 j` → `positronDeck.goToDefinition`
+- **Peek Definition**: `ctrl+alt+shift+f2 k` → `positronDeck.peekDefinition`
+- **Find References**: `ctrl+alt+shift+f2 l` → `positronDeck.findReferences`
+- **Format Selection**: `ctrl+alt+shift+f2 m` → `positronDeck.formatSelection`
+- **Fold All**: `ctrl+alt+shift+f2 n` → `positronDeck.foldAll`
+- **Unfold All**: `ctrl+alt+shift+f2 o` → `positronDeck.unfoldAll`
+- **Toggle Word Wrap**: `ctrl+alt+shift+f2 p` → `positronDeck.toggleWordWrap`
+- **Next Problem**: `ctrl+alt+shift+f2 q` → `positronDeck.nextProblem`
+- **Previous Problem**: `ctrl+alt+shift+f2 r` → `positronDeck.previousProblem`
+- **Undo**: `ctrl+alt+shift+f2 s` → `positronDeck.undo`
+- **Redo**: `ctrl+alt+shift+f2 t` → `positronDeck.redo`
+- **Run without Advancing**: `ctrl+alt+shift+f2 u` → `positronDeck.runWithoutAdvancing`
+- **Run to Cursor**: `ctrl+alt+shift+f2 v` → `positronDeck.runToCursor`
+- **Run from Cursor**: `ctrl+alt+shift+f2 w` → `positronDeck.runFromCursor`
+- **Clear Console**: `ctrl+alt+shift+f2 x` → `positronDeck.clearConsole`
+- **Select Interpreter**: `ctrl+alt+shift+f2 y` → `positronDeck.selectRuntime`
+- **New Console Session**: `ctrl+alt+shift+f2 z` → `positronDeck.newRuntime`
+- **Help at Cursor**: `ctrl+alt+shift+f2 0` → `positronDeck.helpAtCursor`
+- **View Data at Cursor**: `ctrl+alt+shift+f2 1` → `positronDeck.viewDataAtCursor`
+- **Choose Dataframe**: `ctrl+alt+shift+f2 2` → `positronDeck.viewDataVariable`
+- **Refresh Variables**: `ctrl+alt+shift+f2 3` → `positronDeck.refreshVariables`
+- **Refresh Packages**: `ctrl+alt+shift+f2 4` → `positronDeck.refreshPackages`
+- **Import Data from File**: `ctrl+alt+shift+f2 5` → `positronDeck.importData`
+- **Copy Data Selection**: `ctrl+alt+shift+f2 6` → `positronDeck.dataCopy`
+- **Expand Data Summary**: `ctrl+alt+shift+f2 7` → `positronDeck.dataSummaryExpand`
+- **Collapse Data Summary**: `ctrl+alt+shift+f2 8` → `positronDeck.dataSummaryCollapse`
+- **Clear Data Sorting**: `ctrl+alt+shift+f2 9` → `positronDeck.dataClearSorting`
+- **Data Filters to Code**: `ctrl+alt+shift+f3 a` → `positronDeck.dataToCode`
+- **Next Plot**: `ctrl+alt+shift+f3 b` → `positronDeck.plotNext`
+- **Previous Plot**: `ctrl+alt+shift+f3 c` → `positronDeck.plotPrevious`
+- **Save Plot**: `ctrl+alt+shift+f3 d` → `positronDeck.plotSave`
+- **Copy Plot**: `ctrl+alt+shift+f3 e` → `positronDeck.plotCopy`
+- **Plot in Editor**: `ctrl+alt+shift+f3 f` → `positronDeck.plotEditor`
+- **Pop Out Plot**: `ctrl+alt+shift+f3 g` → `positronDeck.plotPopout`
+- **Plot Size Policy**: `ctrl+alt+shift+f3 h` → `positronDeck.plotSizing`
+- **Toggle Primary Sidebar**: `ctrl+alt+shift+f3 i` → `positronDeck.toggleSidebar`
+- **Toggle Secondary Sidebar**: `ctrl+alt+shift+f3 j` → `positronDeck.toggleSecondarySidebar`
+- **Toggle Panel**: `ctrl+alt+shift+f3 k` → `positronDeck.togglePanel`
+- **Maximize Panel**: `ctrl+alt+shift+f3 l` → `positronDeck.maximizePanel`
+- **Zen Mode**: `ctrl+alt+shift+f3 m` → `positronDeck.zenMode`
+- **Full Screen**: `ctrl+alt+shift+f3 n` → `positronDeck.fullScreen`
+- **Customize Layout**: `ctrl+alt+shift+f3 o` → `positronDeck.customizeLayout`
+- **Split Editor Right**: `ctrl+alt+shift+f3 p` → `positronDeck.splitEditorRight`
+- **Split Editor Down**: `ctrl+alt+shift+f3 q` → `positronDeck.splitEditorDown`
+- **Single Editor**: `ctrl+alt+shift+f3 r` → `positronDeck.layoutSingle`
+- **Two Editor Columns**: `ctrl+alt+shift+f3 s` → `positronDeck.layoutColumns`
+- **Two Editor Rows**: `ctrl+alt+shift+f3 t` → `positronDeck.layoutRows`
+- **Editor Grid**: `ctrl+alt+shift+f3 u` → `positronDeck.layoutGrid`
+- **Next Editor Group**: `ctrl+alt+shift+f3 v` → `positronDeck.focusNextGroup`
+- **Move Editor Right**: `ctrl+alt+shift+f3 w` → `positronDeck.moveEditorRight`
+- **Zoom In**: `ctrl+alt+shift+f3 x` → `positronDeck.zoomIn`
+- **Zoom Out**: `ctrl+alt+shift+f3 y` → `positronDeck.zoomOut`
+- **Reset Zoom**: `ctrl+alt+shift+f3 z` → `positronDeck.zoomReset`
+- **Reset View Locations**: `ctrl+alt+shift+f3 0` → `positronDeck.resetViewLocations`
+- **Stacked Data Science**: `ctrl+alt+shift+f3 1` → `positronDeck.layoutStacked`
+- **Side-by-side Data Science**: `ctrl+alt+shift+f3 2` → `positronDeck.layoutSideBySide`
+- **Notebook Layout**: `ctrl+alt+shift+f3 3` → `positronDeck.layoutNotebook`
+- **Assistant Layout**: `ctrl+alt+shift+f3 4` → `positronDeck.layoutAssistant`
+- **Help beside Console**: `ctrl+alt+shift+f3 5` → `positronDeck.layoutHelp`
+- **Full-size Panel**: `ctrl+alt+shift+f3 6` → `positronDeck.maximizeConsoleArea`
+- **Full-size Data Sidebar**: `ctrl+alt+shift+f3 7` → `positronDeck.maximizeDataArea`
+- **Git: Fetch**: `ctrl+alt+shift+f3 8` → `positronDeck.gitFetch`
+- **Git: Stage File**: `ctrl+alt+shift+f3 9` → `positronDeck.gitStageFile`
+- **Git: Unstage All**: `ctrl+alt+shift+f4 a` → `positronDeck.gitUnstageAll`
+- **Git: Create Branch**: `ctrl+alt+shift+f4 b` → `positronDeck.gitBranch`
+- **Git: Stash**: `ctrl+alt+shift+f4 c` → `positronDeck.gitStash`
+- **Git: Pop Stash**: `ctrl+alt+shift+f4 d` → `positronDeck.gitStashPop`
+- **New Terminal**: `ctrl+alt+shift+f4 e` → `positronDeck.newTerminal`
+- **Split Terminal**: `ctrl+alt+shift+f4 f` → `positronDeck.splitTerminal`
+- **Clear Terminal**: `ctrl+alt+shift+f4 g` → `positronDeck.clearTerminal`
+- **Next Terminal**: `ctrl+alt+shift+f4 h` → `positronDeck.nextTerminal`
+- **Previous Terminal**: `ctrl+alt+shift+f4 i` → `positronDeck.previousTerminal`
+- **Run Task**: `ctrl+alt+shift+f4 j` → `positronDeck.runTask`
+- **Run Build Task**: `ctrl+alt+shift+f4 k` → `positronDeck.runBuildTask`
+- **Start Debugging**: `ctrl+alt+shift+f4 l` → `positronDeck.debugStart`
+- **Stop Debugging**: `ctrl+alt+shift+f4 m` → `positronDeck.debugStop`
+- **Debug: Continue**: `ctrl+alt+shift+f4 n` → `positronDeck.debugContinue`
+- **Debug: Step Over**: `ctrl+alt+shift+f4 o` → `positronDeck.debugStepOver`
+- **Debug: Step Into**: `ctrl+alt+shift+f4 p` → `positronDeck.debugStepInto`
+- **Debug: Step Out**: `ctrl+alt+shift+f4 q` → `positronDeck.debugStepOut`
+- **Toggle Breakpoint**: `ctrl+alt+shift+f4 r` → `positronDeck.toggleBreakpoint`
+- **Notebook: Run Cell**: `ctrl+alt+shift+f4 s` → `positronDeck.notebookRunCell`
+- **Notebook: Run and Next**: `ctrl+alt+shift+f4 t` → `positronDeck.notebookRunNext`
+- **Notebook: Run All**: `ctrl+alt+shift+f4 u` → `positronDeck.notebookRunAll`
+- **Notebook: Run Above**: `ctrl+alt+shift+f4 v` → `positronDeck.notebookRunAbove`
+- **Notebook: Run Below**: `ctrl+alt+shift+f4 w` → `positronDeck.notebookRunBelow`
+- **Notebook: Insert Code**: `ctrl+alt+shift+f4 x` → `positronDeck.notebookInsertCode`
+- **Notebook: Insert Markdown**: `ctrl+alt+shift+f4 y` → `positronDeck.notebookInsertMarkdown`
+- **Notebook: Clear Outputs**: `ctrl+alt+shift+f4 z` → `positronDeck.notebookClearOutputs`
+- **Notebook: Stop All**: `ctrl+alt+shift+f4 0` → `positronDeck.notebookStop`
+- **Save and Run**: `ctrl+alt+shift+f4 1` → `positronDeck.saveAndRun`
+- **Format and Save**: `ctrl+alt+shift+f4 2` → `positronDeck.formatAndSave`
+- **Save and Test**: `ctrl+alt+shift+f4 3` → `positronDeck.saveAndTest`
+- **Review Workspace**: `ctrl+alt+shift+f4 4` → `positronDeck.reviewWorkspace`
+- **Analysis Workspace**: `ctrl+alt+shift+f4 5` → `positronDeck.analysisWorkspace`
+- **Quarto Workspace**: `ctrl+alt+shift+f4 6` → `positronDeck.quartoWorkspace`
+- **Choose Workflow**: `ctrl+alt+shift+f4 7` → `positronDeck.runWorkflow`
+- **Check Action Availability**: `ctrl+alt+shift+f4 8` → `positronDeck.diagnostics`
+- **Enable Hotkeys in Terminal**: `ctrl+alt+shift+f4 9` → `positronDeck.configureTerminal`
+- **Custom Workflow 1**: `ctrl+alt+shift+f5 a` → `positronDeck.workflowSlot1`
+- **Custom Workflow 2**: `ctrl+alt+shift+f5 b` → `positronDeck.workflowSlot2`
+- **Custom Workflow 3**: `ctrl+alt+shift+f5 c` → `positronDeck.workflowSlot3`
+- **Custom Workflow 4**: `ctrl+alt+shift+f5 d` → `positronDeck.workflowSlot4`
+- **Custom Workflow 5**: `ctrl+alt+shift+f5 e` → `positronDeck.workflowSlot5`
+- **Custom Workflow 6**: `ctrl+alt+shift+f5 f` → `positronDeck.workflowSlot6`
+- **Custom Workflow 7**: `ctrl+alt+shift+f5 g` → `positronDeck.workflowSlot7`
+- **Custom Workflow 8**: `ctrl+alt+shift+f5 h` → `positronDeck.workflowSlot8`
+- **Run Code Cell**: `ctrl+alt+shift+f5 i` → `positronDeck.runCell`
+- **Run Cell and Advance**: `ctrl+alt+shift+f5 j` → `positronDeck.runCellNext`
+- **Run All Script Cells**: `ctrl+alt+shift+f5 k` → `positronDeck.runAllCells`
+- **Run Script Cells Above**: `ctrl+alt+shift+f5 l` → `positronDeck.runCellsAbove`
+- **Run Script Cells Below**: `ctrl+alt+shift+f5 m` → `positronDeck.runCellsBelow`
+- **Next Code Cell**: `ctrl+alt+shift+f5 n` → `positronDeck.nextCell`
+- **Previous Code Cell**: `ctrl+alt+shift+f5 o` → `positronDeck.previousCell`
+- **Insert Code Cell**: `ctrl+alt+shift+f5 p` → `positronDeck.insertCell`

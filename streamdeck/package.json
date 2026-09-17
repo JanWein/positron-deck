@@ -1,0 +1,27 @@
+{
+  "name": "positron-deck-streamdeck",
+  "version": "0.2.0",
+  "private": true,
+  "type": "module",
+  "description": "Drag-and-drop Positron hotkey actions for Elgato Stream Deck on Windows.",
+  "license": "MIT",
+  "engines": {
+    "node": ">=24"
+  },
+  "scripts": {
+    "build": "tsc --noEmit && node scripts/build.mjs",
+    "test": "npm run build && node --test test/*.test.mjs",
+    "validate": "streamdeck validate org.positron-deck.shortcuts.sdPlugin",
+    "package": "npm run build && npm run validate && streamdeck pack org.positron-deck.shortcuts.sdPlugin --output dist --force --no-file-list"
+  },
+  "dependencies": {
+    "@elgato/streamdeck": "^2.0.0",
+    "koffi": "^2.15.0"
+  },
+  "devDependencies": {
+    "@elgato/cli": "^1.9.0",
+    "@types/node": "^24.0.0",
+    "esbuild": "^0.25.0",
+    "typescript": "^5.8.0"
+  }
+}

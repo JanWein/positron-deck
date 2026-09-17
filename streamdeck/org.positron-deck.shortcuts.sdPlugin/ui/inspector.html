@@ -1,0 +1,15 @@
+<!doctype html>
+<html lang="de"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>Positron Deck</title>
+<style>
+:root{color-scheme:dark;font:13px system-ui,sans-serif;color:#ddd;background:#2d2d2d}body{margin:16px}h1{font-size:16px;margin:0 0 4px;color:#fff}p{line-height:1.5}.muted{color:#aaa}label{display:block;margin:16px 0 6px}select,input{box-sizing:border-box;width:100%;padding:8px;border:1px solid #555;border-radius:5px;color:#fff;background:#222;font:inherit}code{display:block;overflow-wrap:anywhere;background:#222;border:1px solid #444;border-radius:5px;padding:10px;color:#9edbff}#notice{color:#e9c183}#state{font-size:12px;color:#9edbff}button{background:#444;color:#fff;border:1px solid #666;border-radius:4px;padding:6px 10px;cursor:pointer}[hidden]{display:none!important}hr{border:0;border-top:1px solid #444;margin:18px 0}
+</style></head><body>
+<h1 id="name">Positron Deck</h1><p class="muted" id="command"></p>
+<p id="description" class="muted"></p><label for="mode">Tastenkombination</label>
+<select id="mode"><option value="default">Standard der Positron-Extension</option><option value="fallback">Alternative Belegung</option><option value="custom">Eigene Tastenkombination</option></select>
+<div id="customGroup" hidden><label for="shortcut">Eigener Hotkey oder Tastenfolge</label><input id="shortcut" type="text" maxlength="200" placeholder="ctrl+alt+shift+1" autocomplete="off" spellcheck="false"><p class="muted">Tastenfolgen mit Leerzeichen trennen, z. B. ctrl+k ctrl+s. Denselben Hotkey in Positron dem oben genannten Command zuweisen. Erlaubt: ctrl, alt, shift, win; F1 bis F24, A bis Z, 0 bis 9 oder Navigationstasten.</p></div>
+<div id="delayGroup" hidden><label for="delay">Pause zwischen den Tasten (ms)</label><input id="delay" type="number" min="50" max="1000" step="10" value="120"><p id="notice">Hierfür zuerst keybindings-fallback.json aus dem Quellpaket in die Benutzer-Keybindings von Positron übernehmen.</p></div>
+<label>Gesendeter Hotkey</label><code id="effective">Wird geladen …</code><p id="state" aria-live="polite"></p>
+<button id="reset" type="button">Auf Standard zurücksetzen</button><hr>
+<p><strong>Vor dem Drücken die passende Positron-Ansicht fokussieren.</strong> Der Hotkey geht an das aktive Windows-Fenster. Bei Workbench muss der richtige Browser-Tab aktiv sein.</p>
+<p class="muted">Voraussetzung: Positron Deck VSIX 0.2.0 in der IDE. Die Tasten werden lokal gesendet; es gibt keine Verbindung zum Positron-Server und keine Rückmeldung über Test- oder Deployment-Ergebnisse.</p>
+<script src="inspector.js"></script></body></html>

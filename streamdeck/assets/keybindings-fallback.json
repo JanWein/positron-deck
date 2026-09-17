@@ -1,0 +1,1154 @@
+[
+  {
+    "command": "positronDeck.runSelection",
+    "key": "ctrl+alt+shift+f12 a",
+    "mac": "ctrl+alt+shift+f12 a",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.test",
+    "key": "ctrl+alt+shift+f12 b",
+    "mac": "ctrl+alt+shift+f12 b",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.render",
+    "key": "ctrl+alt+shift+f12 c",
+    "mac": "ctrl+alt+shift+f12 c",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitStageAll",
+    "key": "ctrl+alt+shift+f12 d",
+    "mac": "ctrl+alt+shift+f12 d",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitCommit",
+    "key": "ctrl+alt+shift+f12 e",
+    "mac": "ctrl+alt+shift+f12 e",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitPull",
+    "key": "ctrl+alt+shift+f12 f",
+    "mac": "ctrl+alt+shift+f12 f",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitPush",
+    "key": "ctrl+alt+shift+f12 g",
+    "mac": "ctrl+alt+shift+f12 g",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.deploy",
+    "key": "ctrl+alt+shift+f12 h",
+    "mac": "ctrl+alt+shift+f12 h",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runFile",
+    "key": "ctrl+alt+shift+f12 i",
+    "mac": "ctrl+alt+shift+f12 i",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runApp",
+    "key": "ctrl+alt+shift+f12 j",
+    "mac": "ctrl+alt+shift+f12 j",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.openTerminal",
+    "key": "ctrl+alt+shift+f12 k",
+    "mac": "ctrl+alt+shift+f12 k",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openConsole",
+    "key": "ctrl+alt+shift+f12 l",
+    "mac": "ctrl+alt+shift+f12 l",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.commandPalette",
+    "key": "ctrl+alt+shift+f12 m",
+    "mac": "ctrl+alt+shift+f12 m",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.gitSync",
+    "key": "ctrl+alt+shift+f12 n",
+    "mac": "ctrl+alt+shift+f12 n",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitShowDiff",
+    "key": "ctrl+alt+shift+f12 o",
+    "mac": "ctrl+alt+shift+f12 o",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.gitOpenLog",
+    "key": "ctrl+alt+shift+f12 p",
+    "mac": "ctrl+alt+shift+f12 p",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openSourceControl",
+    "key": "ctrl+alt+shift+f12 q",
+    "mac": "ctrl+alt+shift+f12 q",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.format",
+    "key": "ctrl+alt+shift+f12 r",
+    "mac": "ctrl+alt+shift+f12 r",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.rLint",
+    "key": "ctrl+alt+shift+f12 s",
+    "mac": "ctrl+alt+shift+f12 s",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.rCheck",
+    "key": "ctrl+alt+shift+f12 t",
+    "mac": "ctrl+alt+shift+f12 t",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.rDocument",
+    "key": "ctrl+alt+shift+f12 u",
+    "mac": "ctrl+alt+shift+f12 u",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.preview",
+    "key": "ctrl+alt+shift+f12 v",
+    "mac": "ctrl+alt+shift+f12 v",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.restartRuntime",
+    "key": "ctrl+alt+shift+f12 w",
+    "mac": "ctrl+alt+shift+f12 w",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.openProblems",
+    "key": "ctrl+alt+shift+f12 x",
+    "mac": "ctrl+alt+shift+f12 x",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.stopExecution",
+    "key": "ctrl+alt+shift+f12 y",
+    "mac": "ctrl+alt+shift+f12 y",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitCheckout",
+    "key": "ctrl+alt+shift+f12 z",
+    "mac": "ctrl+alt+shift+f12 z",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.testCurrentFile",
+    "key": "ctrl+alt+shift+f12 0",
+    "mac": "ctrl+alt+shift+f12 0",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.rTest",
+    "key": "ctrl+alt+shift+f12 1",
+    "mac": "ctrl+alt+shift+f12 1",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.rLoadAll",
+    "key": "ctrl+alt+shift+f12 2",
+    "mac": "ctrl+alt+shift+f12 2",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.rStyle",
+    "key": "ctrl+alt+shift+f12 3",
+    "mac": "ctrl+alt+shift+f12 3",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.stopApp",
+    "key": "ctrl+alt+shift+f12 4",
+    "mac": "ctrl+alt+shift+f12 4",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.showLog",
+    "key": "ctrl+alt+shift+f12 5",
+    "mac": "ctrl+alt+shift+f12 5",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openExplorer",
+    "key": "ctrl+alt+shift+f1 a",
+    "mac": "ctrl+alt+shift+f1 a",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openSearch",
+    "key": "ctrl+alt+shift+f1 b",
+    "mac": "ctrl+alt+shift+f1 b",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openExtensions",
+    "key": "ctrl+alt+shift+f1 c",
+    "mac": "ctrl+alt+shift+f1 c",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openDebug",
+    "key": "ctrl+alt+shift+f1 d",
+    "mac": "ctrl+alt+shift+f1 d",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openTesting",
+    "key": "ctrl+alt+shift+f1 e",
+    "mac": "ctrl+alt+shift+f1 e",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openOutput",
+    "key": "ctrl+alt+shift+f1 f",
+    "mac": "ctrl+alt+shift+f1 f",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openSettings",
+    "key": "ctrl+alt+shift+f1 g",
+    "mac": "ctrl+alt+shift+f1 g",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openKeybindings",
+    "key": "ctrl+alt+shift+f1 h",
+    "mac": "ctrl+alt+shift+f1 h",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.quickOpen",
+    "key": "ctrl+alt+shift+f1 i",
+    "mac": "ctrl+alt+shift+f1 i",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.goToSymbol",
+    "key": "ctrl+alt+shift+f1 j",
+    "mac": "ctrl+alt+shift+f1 j",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.goToLine",
+    "key": "ctrl+alt+shift+f1 k",
+    "mac": "ctrl+alt+shift+f1 k",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.focusEditor",
+    "key": "ctrl+alt+shift+f1 l",
+    "mac": "ctrl+alt+shift+f1 l",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.nextEditor",
+    "key": "ctrl+alt+shift+f1 m",
+    "mac": "ctrl+alt+shift+f1 m",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.previousEditor",
+    "key": "ctrl+alt+shift+f1 n",
+    "mac": "ctrl+alt+shift+f1 n",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.navigateBack",
+    "key": "ctrl+alt+shift+f1 o",
+    "mac": "ctrl+alt+shift+f1 o",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.navigateForward",
+    "key": "ctrl+alt+shift+f1 p",
+    "mac": "ctrl+alt+shift+f1 p",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.reopenEditor",
+    "key": "ctrl+alt+shift+f1 q",
+    "mac": "ctrl+alt+shift+f1 q",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openRecent",
+    "key": "ctrl+alt+shift+f1 r",
+    "mac": "ctrl+alt+shift+f1 r",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openDataConnections",
+    "key": "ctrl+alt+shift+f1 s",
+    "mac": "ctrl+alt+shift+f1 s",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openConnections",
+    "key": "ctrl+alt+shift+f1 t",
+    "mac": "ctrl+alt+shift+f1 t",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openVariables",
+    "key": "ctrl+alt+shift+f1 u",
+    "mac": "ctrl+alt+shift+f1 u",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openPlots",
+    "key": "ctrl+alt+shift+f1 v",
+    "mac": "ctrl+alt+shift+f1 v",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openHelp",
+    "key": "ctrl+alt+shift+f1 w",
+    "mac": "ctrl+alt+shift+f1 w",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openHistory",
+    "key": "ctrl+alt+shift+f1 x",
+    "mac": "ctrl+alt+shift+f1 x",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openViewer",
+    "key": "ctrl+alt+shift+f1 y",
+    "mac": "ctrl+alt+shift+f1 y",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openPackages",
+    "key": "ctrl+alt+shift+f1 z",
+    "mac": "ctrl+alt+shift+f1 z",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openSessions",
+    "key": "ctrl+alt+shift+f1 0",
+    "mac": "ctrl+alt+shift+f1 0",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.openAssistant",
+    "key": "ctrl+alt+shift+f1 1",
+    "mac": "ctrl+alt+shift+f1 1",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.saveFile",
+    "key": "ctrl+alt+shift+f1 2",
+    "mac": "ctrl+alt+shift+f1 2",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.saveAll",
+    "key": "ctrl+alt+shift+f1 3",
+    "mac": "ctrl+alt+shift+f1 3",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.newFile",
+    "key": "ctrl+alt+shift+f1 4",
+    "mac": "ctrl+alt+shift+f1 4",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.closeEditor",
+    "key": "ctrl+alt+shift+f1 5",
+    "mac": "ctrl+alt+shift+f1 5",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.findInFile",
+    "key": "ctrl+alt+shift+f1 6",
+    "mac": "ctrl+alt+shift+f1 6",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.replaceInFile",
+    "key": "ctrl+alt+shift+f1 7",
+    "mac": "ctrl+alt+shift+f1 7",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.commentLine",
+    "key": "ctrl+alt+shift+f1 8",
+    "mac": "ctrl+alt+shift+f1 8",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.commentBlock",
+    "key": "ctrl+alt+shift+f1 9",
+    "mac": "ctrl+alt+shift+f1 9",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.duplicateLine",
+    "key": "ctrl+alt+shift+f2 a",
+    "mac": "ctrl+alt+shift+f2 a",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.moveLineUp",
+    "key": "ctrl+alt+shift+f2 b",
+    "mac": "ctrl+alt+shift+f2 b",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.moveLineDown",
+    "key": "ctrl+alt+shift+f2 c",
+    "mac": "ctrl+alt+shift+f2 c",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.selectNextMatch",
+    "key": "ctrl+alt+shift+f2 d",
+    "mac": "ctrl+alt+shift+f2 d",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.selectAllMatches",
+    "key": "ctrl+alt+shift+f2 e",
+    "mac": "ctrl+alt+shift+f2 e",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.expandSelection",
+    "key": "ctrl+alt+shift+f2 f",
+    "mac": "ctrl+alt+shift+f2 f",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.shrinkSelection",
+    "key": "ctrl+alt+shift+f2 g",
+    "mac": "ctrl+alt+shift+f2 g",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.renameSymbol",
+    "key": "ctrl+alt+shift+f2 h",
+    "mac": "ctrl+alt+shift+f2 h",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.quickFix",
+    "key": "ctrl+alt+shift+f2 i",
+    "mac": "ctrl+alt+shift+f2 i",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.goToDefinition",
+    "key": "ctrl+alt+shift+f2 j",
+    "mac": "ctrl+alt+shift+f2 j",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.peekDefinition",
+    "key": "ctrl+alt+shift+f2 k",
+    "mac": "ctrl+alt+shift+f2 k",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.findReferences",
+    "key": "ctrl+alt+shift+f2 l",
+    "mac": "ctrl+alt+shift+f2 l",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.formatSelection",
+    "key": "ctrl+alt+shift+f2 m",
+    "mac": "ctrl+alt+shift+f2 m",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.foldAll",
+    "key": "ctrl+alt+shift+f2 n",
+    "mac": "ctrl+alt+shift+f2 n",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.unfoldAll",
+    "key": "ctrl+alt+shift+f2 o",
+    "mac": "ctrl+alt+shift+f2 o",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.toggleWordWrap",
+    "key": "ctrl+alt+shift+f2 p",
+    "mac": "ctrl+alt+shift+f2 p",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.nextProblem",
+    "key": "ctrl+alt+shift+f2 q",
+    "mac": "ctrl+alt+shift+f2 q",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.previousProblem",
+    "key": "ctrl+alt+shift+f2 r",
+    "mac": "ctrl+alt+shift+f2 r",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.undo",
+    "key": "ctrl+alt+shift+f2 s",
+    "mac": "ctrl+alt+shift+f2 s",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.redo",
+    "key": "ctrl+alt+shift+f2 t",
+    "mac": "ctrl+alt+shift+f2 t",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runWithoutAdvancing",
+    "key": "ctrl+alt+shift+f2 u",
+    "mac": "ctrl+alt+shift+f2 u",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runToCursor",
+    "key": "ctrl+alt+shift+f2 v",
+    "mac": "ctrl+alt+shift+f2 v",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runFromCursor",
+    "key": "ctrl+alt+shift+f2 w",
+    "mac": "ctrl+alt+shift+f2 w",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.clearConsole",
+    "key": "ctrl+alt+shift+f2 x",
+    "mac": "ctrl+alt+shift+f2 x",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.selectRuntime",
+    "key": "ctrl+alt+shift+f2 y",
+    "mac": "ctrl+alt+shift+f2 y",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.newRuntime",
+    "key": "ctrl+alt+shift+f2 z",
+    "mac": "ctrl+alt+shift+f2 z",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.helpAtCursor",
+    "key": "ctrl+alt+shift+f2 0",
+    "mac": "ctrl+alt+shift+f2 0",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.viewDataAtCursor",
+    "key": "ctrl+alt+shift+f2 1",
+    "mac": "ctrl+alt+shift+f2 1",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.viewDataVariable",
+    "key": "ctrl+alt+shift+f2 2",
+    "mac": "ctrl+alt+shift+f2 2",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.refreshVariables",
+    "key": "ctrl+alt+shift+f2 3",
+    "mac": "ctrl+alt+shift+f2 3",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.refreshPackages",
+    "key": "ctrl+alt+shift+f2 4",
+    "mac": "ctrl+alt+shift+f2 4",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.importData",
+    "key": "ctrl+alt+shift+f2 5",
+    "mac": "ctrl+alt+shift+f2 5",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.dataCopy",
+    "key": "ctrl+alt+shift+f2 6",
+    "mac": "ctrl+alt+shift+f2 6",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.dataSummaryExpand",
+    "key": "ctrl+alt+shift+f2 7",
+    "mac": "ctrl+alt+shift+f2 7",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.dataSummaryCollapse",
+    "key": "ctrl+alt+shift+f2 8",
+    "mac": "ctrl+alt+shift+f2 8",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.dataClearSorting",
+    "key": "ctrl+alt+shift+f2 9",
+    "mac": "ctrl+alt+shift+f2 9",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.dataToCode",
+    "key": "ctrl+alt+shift+f3 a",
+    "mac": "ctrl+alt+shift+f3 a",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.plotNext",
+    "key": "ctrl+alt+shift+f3 b",
+    "mac": "ctrl+alt+shift+f3 b",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.plotPrevious",
+    "key": "ctrl+alt+shift+f3 c",
+    "mac": "ctrl+alt+shift+f3 c",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.plotSave",
+    "key": "ctrl+alt+shift+f3 d",
+    "mac": "ctrl+alt+shift+f3 d",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.plotCopy",
+    "key": "ctrl+alt+shift+f3 e",
+    "mac": "ctrl+alt+shift+f3 e",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.plotEditor",
+    "key": "ctrl+alt+shift+f3 f",
+    "mac": "ctrl+alt+shift+f3 f",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.plotPopout",
+    "key": "ctrl+alt+shift+f3 g",
+    "mac": "ctrl+alt+shift+f3 g",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.plotSizing",
+    "key": "ctrl+alt+shift+f3 h",
+    "mac": "ctrl+alt+shift+f3 h",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.toggleSidebar",
+    "key": "ctrl+alt+shift+f3 i",
+    "mac": "ctrl+alt+shift+f3 i",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.toggleSecondarySidebar",
+    "key": "ctrl+alt+shift+f3 j",
+    "mac": "ctrl+alt+shift+f3 j",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.togglePanel",
+    "key": "ctrl+alt+shift+f3 k",
+    "mac": "ctrl+alt+shift+f3 k",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.maximizePanel",
+    "key": "ctrl+alt+shift+f3 l",
+    "mac": "ctrl+alt+shift+f3 l",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.zenMode",
+    "key": "ctrl+alt+shift+f3 m",
+    "mac": "ctrl+alt+shift+f3 m",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.fullScreen",
+    "key": "ctrl+alt+shift+f3 n",
+    "mac": "ctrl+alt+shift+f3 n",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.customizeLayout",
+    "key": "ctrl+alt+shift+f3 o",
+    "mac": "ctrl+alt+shift+f3 o",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.splitEditorRight",
+    "key": "ctrl+alt+shift+f3 p",
+    "mac": "ctrl+alt+shift+f3 p",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.splitEditorDown",
+    "key": "ctrl+alt+shift+f3 q",
+    "mac": "ctrl+alt+shift+f3 q",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutSingle",
+    "key": "ctrl+alt+shift+f3 r",
+    "mac": "ctrl+alt+shift+f3 r",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutColumns",
+    "key": "ctrl+alt+shift+f3 s",
+    "mac": "ctrl+alt+shift+f3 s",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutRows",
+    "key": "ctrl+alt+shift+f3 t",
+    "mac": "ctrl+alt+shift+f3 t",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutGrid",
+    "key": "ctrl+alt+shift+f3 u",
+    "mac": "ctrl+alt+shift+f3 u",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.focusNextGroup",
+    "key": "ctrl+alt+shift+f3 v",
+    "mac": "ctrl+alt+shift+f3 v",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.moveEditorRight",
+    "key": "ctrl+alt+shift+f3 w",
+    "mac": "ctrl+alt+shift+f3 w",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.zoomIn",
+    "key": "ctrl+alt+shift+f3 x",
+    "mac": "ctrl+alt+shift+f3 x",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.zoomOut",
+    "key": "ctrl+alt+shift+f3 y",
+    "mac": "ctrl+alt+shift+f3 y",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.zoomReset",
+    "key": "ctrl+alt+shift+f3 z",
+    "mac": "ctrl+alt+shift+f3 z",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.resetViewLocations",
+    "key": "ctrl+alt+shift+f3 0",
+    "mac": "ctrl+alt+shift+f3 0",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutStacked",
+    "key": "ctrl+alt+shift+f3 1",
+    "mac": "ctrl+alt+shift+f3 1",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutSideBySide",
+    "key": "ctrl+alt+shift+f3 2",
+    "mac": "ctrl+alt+shift+f3 2",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutNotebook",
+    "key": "ctrl+alt+shift+f3 3",
+    "mac": "ctrl+alt+shift+f3 3",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutAssistant",
+    "key": "ctrl+alt+shift+f3 4",
+    "mac": "ctrl+alt+shift+f3 4",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.layoutHelp",
+    "key": "ctrl+alt+shift+f3 5",
+    "mac": "ctrl+alt+shift+f3 5",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.maximizeConsoleArea",
+    "key": "ctrl+alt+shift+f3 6",
+    "mac": "ctrl+alt+shift+f3 6",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.maximizeDataArea",
+    "key": "ctrl+alt+shift+f3 7",
+    "mac": "ctrl+alt+shift+f3 7",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.gitFetch",
+    "key": "ctrl+alt+shift+f3 8",
+    "mac": "ctrl+alt+shift+f3 8",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitStageFile",
+    "key": "ctrl+alt+shift+f3 9",
+    "mac": "ctrl+alt+shift+f3 9",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitUnstageAll",
+    "key": "ctrl+alt+shift+f4 a",
+    "mac": "ctrl+alt+shift+f4 a",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitBranch",
+    "key": "ctrl+alt+shift+f4 b",
+    "mac": "ctrl+alt+shift+f4 b",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitStash",
+    "key": "ctrl+alt+shift+f4 c",
+    "mac": "ctrl+alt+shift+f4 c",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.gitStashPop",
+    "key": "ctrl+alt+shift+f4 d",
+    "mac": "ctrl+alt+shift+f4 d",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.newTerminal",
+    "key": "ctrl+alt+shift+f4 e",
+    "mac": "ctrl+alt+shift+f4 e",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.splitTerminal",
+    "key": "ctrl+alt+shift+f4 f",
+    "mac": "ctrl+alt+shift+f4 f",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.clearTerminal",
+    "key": "ctrl+alt+shift+f4 g",
+    "mac": "ctrl+alt+shift+f4 g",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.nextTerminal",
+    "key": "ctrl+alt+shift+f4 h",
+    "mac": "ctrl+alt+shift+f4 h",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.previousTerminal",
+    "key": "ctrl+alt+shift+f4 i",
+    "mac": "ctrl+alt+shift+f4 i",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runTask",
+    "key": "ctrl+alt+shift+f4 j",
+    "mac": "ctrl+alt+shift+f4 j",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runBuildTask",
+    "key": "ctrl+alt+shift+f4 k",
+    "mac": "ctrl+alt+shift+f4 k",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.debugStart",
+    "key": "ctrl+alt+shift+f4 l",
+    "mac": "ctrl+alt+shift+f4 l",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.debugStop",
+    "key": "ctrl+alt+shift+f4 m",
+    "mac": "ctrl+alt+shift+f4 m",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.debugContinue",
+    "key": "ctrl+alt+shift+f4 n",
+    "mac": "ctrl+alt+shift+f4 n",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.debugStepOver",
+    "key": "ctrl+alt+shift+f4 o",
+    "mac": "ctrl+alt+shift+f4 o",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.debugStepInto",
+    "key": "ctrl+alt+shift+f4 p",
+    "mac": "ctrl+alt+shift+f4 p",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.debugStepOut",
+    "key": "ctrl+alt+shift+f4 q",
+    "mac": "ctrl+alt+shift+f4 q",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.toggleBreakpoint",
+    "key": "ctrl+alt+shift+f4 r",
+    "mac": "ctrl+alt+shift+f4 r",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookRunCell",
+    "key": "ctrl+alt+shift+f4 s",
+    "mac": "ctrl+alt+shift+f4 s",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookRunNext",
+    "key": "ctrl+alt+shift+f4 t",
+    "mac": "ctrl+alt+shift+f4 t",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookRunAll",
+    "key": "ctrl+alt+shift+f4 u",
+    "mac": "ctrl+alt+shift+f4 u",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookRunAbove",
+    "key": "ctrl+alt+shift+f4 v",
+    "mac": "ctrl+alt+shift+f4 v",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookRunBelow",
+    "key": "ctrl+alt+shift+f4 w",
+    "mac": "ctrl+alt+shift+f4 w",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookInsertCode",
+    "key": "ctrl+alt+shift+f4 x",
+    "mac": "ctrl+alt+shift+f4 x",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookInsertMarkdown",
+    "key": "ctrl+alt+shift+f4 y",
+    "mac": "ctrl+alt+shift+f4 y",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookClearOutputs",
+    "key": "ctrl+alt+shift+f4 z",
+    "mac": "ctrl+alt+shift+f4 z",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.notebookStop",
+    "key": "ctrl+alt+shift+f4 0",
+    "mac": "ctrl+alt+shift+f4 0",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.saveAndRun",
+    "key": "ctrl+alt+shift+f4 1",
+    "mac": "ctrl+alt+shift+f4 1",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.formatAndSave",
+    "key": "ctrl+alt+shift+f4 2",
+    "mac": "ctrl+alt+shift+f4 2",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.saveAndTest",
+    "key": "ctrl+alt+shift+f4 3",
+    "mac": "ctrl+alt+shift+f4 3",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.reviewWorkspace",
+    "key": "ctrl+alt+shift+f4 4",
+    "mac": "ctrl+alt+shift+f4 4",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.analysisWorkspace",
+    "key": "ctrl+alt+shift+f4 5",
+    "mac": "ctrl+alt+shift+f4 5",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.quartoWorkspace",
+    "key": "ctrl+alt+shift+f4 6",
+    "mac": "ctrl+alt+shift+f4 6",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runWorkflow",
+    "key": "ctrl+alt+shift+f4 7",
+    "mac": "ctrl+alt+shift+f4 7",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.diagnostics",
+    "key": "ctrl+alt+shift+f4 8",
+    "mac": "ctrl+alt+shift+f4 8",
+    "when": "!inQuickOpen"
+  },
+  {
+    "command": "positronDeck.configureTerminal",
+    "key": "ctrl+alt+shift+f4 9",
+    "mac": "ctrl+alt+shift+f4 9",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.workflowSlot1",
+    "key": "ctrl+alt+shift+f5 a",
+    "mac": "ctrl+alt+shift+f5 a",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.workflowSlot2",
+    "key": "ctrl+alt+shift+f5 b",
+    "mac": "ctrl+alt+shift+f5 b",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.workflowSlot3",
+    "key": "ctrl+alt+shift+f5 c",
+    "mac": "ctrl+alt+shift+f5 c",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.workflowSlot4",
+    "key": "ctrl+alt+shift+f5 d",
+    "mac": "ctrl+alt+shift+f5 d",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.workflowSlot5",
+    "key": "ctrl+alt+shift+f5 e",
+    "mac": "ctrl+alt+shift+f5 e",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.workflowSlot6",
+    "key": "ctrl+alt+shift+f5 f",
+    "mac": "ctrl+alt+shift+f5 f",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.workflowSlot7",
+    "key": "ctrl+alt+shift+f5 g",
+    "mac": "ctrl+alt+shift+f5 g",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.workflowSlot8",
+    "key": "ctrl+alt+shift+f5 h",
+    "mac": "ctrl+alt+shift+f5 h",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runCell",
+    "key": "ctrl+alt+shift+f5 i",
+    "mac": "ctrl+alt+shift+f5 i",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runCellNext",
+    "key": "ctrl+alt+shift+f5 j",
+    "mac": "ctrl+alt+shift+f5 j",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runAllCells",
+    "key": "ctrl+alt+shift+f5 k",
+    "mac": "ctrl+alt+shift+f5 k",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runCellsAbove",
+    "key": "ctrl+alt+shift+f5 l",
+    "mac": "ctrl+alt+shift+f5 l",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.runCellsBelow",
+    "key": "ctrl+alt+shift+f5 m",
+    "mac": "ctrl+alt+shift+f5 m",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.nextCell",
+    "key": "ctrl+alt+shift+f5 n",
+    "mac": "ctrl+alt+shift+f5 n",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.previousCell",
+    "key": "ctrl+alt+shift+f5 o",
+    "mac": "ctrl+alt+shift+f5 o",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  },
+  {
+    "command": "positronDeck.insertCell",
+    "key": "ctrl+alt+shift+f5 p",
+    "mac": "ctrl+alt+shift+f5 p",
+    "when": "!inQuickOpen && isWorkspaceTrusted"
+  }
+]

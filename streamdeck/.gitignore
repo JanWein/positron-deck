@@ -1,0 +1,6 @@
+node_modules/
+dist/
+.test-build/
+org.positron-deck.shortcuts.sdPlugin/bin/
+org.positron-deck.shortcuts.sdPlugin/node_modules/
+org.positron-deck.shortcuts.sdPlugin/logs/

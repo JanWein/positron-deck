@@ -1,0 +1,132 @@
+{
+  "device": "Stream Deck XL",
+  "reservedTopRow": true,
+  "rows": [
+    [
+      {
+        "command": "positronDeck.runSelection",
+        "label": "Run Selection or Line",
+        "key": "ctrl+alt+shift+f13"
+      },
+      {
+        "command": "positronDeck.runFile",
+        "label": "Run File",
+        "key": "ctrl+alt+shift+f21"
+      },
+      {
+        "command": "positronDeck.test",
+        "label": "Test Project",
+        "key": "ctrl+alt+shift+f14"
+      },
+      {
+        "command": "positronDeck.render",
+        "label": "Quarto: Render",
+        "key": "ctrl+alt+shift+f15"
+      },
+      {
+        "command": "positronDeck.runApp",
+        "label": "Run App",
+        "key": "ctrl+alt+shift+f22"
+      },
+      {
+        "command": "positronDeck.openTerminal",
+        "label": "Open Terminal",
+        "key": "ctrl+alt+shift+f23"
+      },
+      {
+        "command": "positronDeck.openConsole",
+        "label": "Open Console",
+        "key": "ctrl+alt+shift+f24"
+      },
+      {
+        "command": "positronDeck.commandPalette",
+        "label": "Command Palette",
+        "key": "ctrl+shift+f13"
+      }
+    ],
+    [
+      {
+        "command": "positronDeck.gitStageAll",
+        "label": "Git: Stage All",
+        "key": "ctrl+alt+shift+f16"
+      },
+      {
+        "command": "positronDeck.gitCommit",
+        "label": "Git: Commit",
+        "key": "ctrl+alt+shift+f17"
+      },
+      {
+        "command": "positronDeck.gitPull",
+        "label": "Git: Pull",
+        "key": "ctrl+alt+shift+f18"
+      },
+      {
+        "command": "positronDeck.gitPush",
+        "label": "Git: Push",
+        "key": "ctrl+alt+shift+f19"
+      },
+      {
+        "command": "positronDeck.gitSync",
+        "label": "Git: Sync",
+        "key": "ctrl+shift+f14"
+      },
+      {
+        "command": "positronDeck.gitShowDiff",
+        "label": "Git: Show Diff",
+        "key": "ctrl+shift+f15"
+      },
+      {
+        "command": "positronDeck.gitOpenLog",
+        "label": "Git: Open History",
+        "key": "ctrl+shift+f16"
+      },
+      {
+        "command": "positronDeck.openSourceControl",
+        "label": "Open Source Control",
+        "key": "ctrl+shift+f17"
+      }
+    ],
+    [
+      {
+        "command": "positronDeck.format",
+        "label": "Format Document",
+        "key": "ctrl+shift+f18"
+      },
+      {
+        "command": "positronDeck.rLint",
+        "label": "R Package: Lint",
+        "key": "ctrl+shift+f19"
+      },
+      {
+        "command": "positronDeck.rCheck",
+        "label": "R Package: Check",
+        "key": "ctrl+shift+f20"
+      },
+      {
+        "command": "positronDeck.rDocument",
+        "label": "R Package: Document",
+        "key": "ctrl+shift+f21"
+      },
+      {
+        "command": "positronDeck.preview",
+        "label": "Quarto: Preview",
+        "key": "ctrl+shift+f22"
+      },
+      {
+        "command": "positronDeck.restartRuntime",
+        "label": "Restart Runtime",
+        "key": "ctrl+shift+f23"
+      },
+      {
+        "command": "positronDeck.openProblems",
+        "label": "Open Problems",
+        "key": "ctrl+shift+f24"
+      },
+      {
+        "command": "positronDeck.deploy",
+        "label": "Deploy",
+        "key": "ctrl+alt+shift+f20"
+      }
+    ]
+  ]
+}

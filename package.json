@@ -1,0 +1,12 @@
+{
+  "name": "positron-deck-suite", "version": "0.2.0", "private": true,
+  "description": "Positron Deck extension, Stream Deck companion and documentation",
+  "license": "MIT", "engines": {"node": ">=24"},
+  "scripts": {
+    "generate": "node scripts/generate.mjs",
+    "build": "npm run generate && npm --prefix extension run compile && npm --prefix streamdeck run build",
+    "lint": "npm --prefix extension run lint",
+    "test": "npm run generate && npm --prefix extension test && npm --prefix streamdeck test && node scripts/check-docs.mjs",
+    "package": "npm run generate && npm --prefix extension run package && npm --prefix streamdeck run package"
+  }
+}

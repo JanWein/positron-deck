@@ -1,0 +1,3484 @@
+{
+  "$schema": "https://schemas.elgato.com/streamdeck/plugins/manifest.json",
+  "UUID": "org.positron-deck.shortcuts",
+  "Name": "Positron Deck",
+  "Category": "Positron Deck",
+  "CategoryIcon": "imgs/category",
+  "Author": "Jan-Hendrik Weinert",
+  "Description": "Ready-to-drag hotkey actions for Positron Deck. Windows only; no direct connection to the IDE.",
+  "Version": "0.2.0.0",
+  "SDKVersion": 2,
+  "Software": {
+    "MinimumVersion": "7.1"
+  },
+  "OS": [
+    {
+      "Platform": "windows",
+      "MinimumVersion": "10"
+    }
+  ],
+  "Nodejs": {
+    "Version": "24"
+  },
+  "CodePath": "bin/plugin.js",
+  "Icon": "imgs/plugin",
+  "PropertyInspectorPath": "ui/inspector.html",
+  "Actions": [
+    {
+      "UUID": "org.positron-deck.shortcuts.runselection",
+      "Name": "Run Selection or Line",
+      "Tooltip": "positronDeck.runSelection: ctrl+alt+shift+f13",
+      "Icon": "imgs/runSelection-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runSelection-key",
+          "Title": "Run\nSelection",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.test",
+      "Name": "Test Project",
+      "Tooltip": "positronDeck.test: ctrl+alt+shift+f14",
+      "Icon": "imgs/test-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/test-key",
+          "Title": "Test",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.render",
+      "Name": "Quarto: Render",
+      "Tooltip": "positronDeck.render: ctrl+alt+shift+f15",
+      "Icon": "imgs/render-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/render-key",
+          "Title": "Render",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitstageall",
+      "Name": "Git: Stage All",
+      "Tooltip": "positronDeck.gitStageAll: ctrl+alt+shift+f16",
+      "Icon": "imgs/gitStageAll-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitStageAll-key",
+          "Title": "Stage All",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitcommit",
+      "Name": "Git: Commit",
+      "Tooltip": "positronDeck.gitCommit: ctrl+alt+shift+f17",
+      "Icon": "imgs/gitCommit-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitCommit-key",
+          "Title": "Commit",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitpull",
+      "Name": "Git: Pull",
+      "Tooltip": "positronDeck.gitPull: ctrl+alt+shift+f18",
+      "Icon": "imgs/gitPull-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitPull-key",
+          "Title": "Pull",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitpush",
+      "Name": "Git: Push",
+      "Tooltip": "positronDeck.gitPush: ctrl+alt+shift+f19",
+      "Icon": "imgs/gitPush-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitPush-key",
+          "Title": "Push",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.deploy",
+      "Name": "Deploy",
+      "Tooltip": "positronDeck.deploy: ctrl+alt+shift+f20",
+      "Icon": "imgs/deploy-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/deploy-key",
+          "Title": "Deploy",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runfile",
+      "Name": "Run File",
+      "Tooltip": "positronDeck.runFile: ctrl+alt+shift+f21",
+      "Icon": "imgs/runFile-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runFile-key",
+          "Title": "Run File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runapp",
+      "Name": "Run App",
+      "Tooltip": "positronDeck.runApp: ctrl+alt+shift+f22",
+      "Icon": "imgs/runApp-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runApp-key",
+          "Title": "Run App",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openterminal",
+      "Name": "Open Terminal",
+      "Tooltip": "positronDeck.openTerminal: ctrl+alt+shift+f23",
+      "Icon": "imgs/openTerminal-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openTerminal-key",
+          "Title": "Terminal",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openconsole",
+      "Name": "Open Console",
+      "Tooltip": "positronDeck.openConsole: ctrl+alt+shift+f24",
+      "Icon": "imgs/openConsole-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openConsole-key",
+          "Title": "Console",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.commandpalette",
+      "Name": "Command Palette",
+      "Tooltip": "positronDeck.commandPalette: ctrl+shift+f13",
+      "Icon": "imgs/commandPalette-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/commandPalette-key",
+          "Title": "Commands",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitsync",
+      "Name": "Git: Sync",
+      "Tooltip": "positronDeck.gitSync: ctrl+shift+f14",
+      "Icon": "imgs/gitSync-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitSync-key",
+          "Title": "Sync",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitshowdiff",
+      "Name": "Git: Show Diff",
+      "Tooltip": "positronDeck.gitShowDiff: ctrl+shift+f15",
+      "Icon": "imgs/gitShowDiff-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitShowDiff-key",
+          "Title": "Diff",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitopenlog",
+      "Name": "Git: Open History",
+      "Tooltip": "positronDeck.gitOpenLog: ctrl+shift+f16",
+      "Icon": "imgs/gitOpenLog-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitOpenLog-key",
+          "Title": "Git Log",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.opensourcecontrol",
+      "Name": "Open Source Control",
+      "Tooltip": "positronDeck.openSourceControl: ctrl+shift+f17",
+      "Icon": "imgs/openSourceControl-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openSourceControl-key",
+          "Title": "Source\nControl",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.format",
+      "Name": "Format Document",
+      "Tooltip": "positronDeck.format: ctrl+shift+f18",
+      "Icon": "imgs/format-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/format-key",
+          "Title": "Format",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.rlint",
+      "Name": "R Package: Lint",
+      "Tooltip": "positronDeck.rLint: ctrl+shift+f19",
+      "Icon": "imgs/rLint-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/rLint-key",
+          "Title": "R Lint",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.rcheck",
+      "Name": "R Package: Check",
+      "Tooltip": "positronDeck.rCheck: ctrl+shift+f20",
+      "Icon": "imgs/rCheck-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/rCheck-key",
+          "Title": "R Check",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.rdocument",
+      "Name": "R Package: Document",
+      "Tooltip": "positronDeck.rDocument: ctrl+shift+f21",
+      "Icon": "imgs/rDocument-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/rDocument-key",
+          "Title": "Document",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.preview",
+      "Name": "Quarto: Preview",
+      "Tooltip": "positronDeck.preview: ctrl+shift+f22",
+      "Icon": "imgs/preview-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/preview-key",
+          "Title": "Preview",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.restartruntime",
+      "Name": "Restart Runtime",
+      "Tooltip": "positronDeck.restartRuntime: ctrl+shift+f23",
+      "Icon": "imgs/restartRuntime-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/restartRuntime-key",
+          "Title": "Restart",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openproblems",
+      "Name": "Open Problems",
+      "Tooltip": "positronDeck.openProblems: ctrl+shift+f24",
+      "Icon": "imgs/openProblems-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openProblems-key",
+          "Title": "Problems",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.stopexecution",
+      "Name": "Stop Execution",
+      "Tooltip": "positronDeck.stopExecution: ctrl+alt+f13",
+      "Icon": "imgs/stopExecution-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/stopExecution-key",
+          "Title": "Stop Code",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitcheckout",
+      "Name": "Git: Checkout",
+      "Tooltip": "positronDeck.gitCheckout: ctrl+alt+f14",
+      "Icon": "imgs/gitCheckout-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitCheckout-key",
+          "Title": "Checkout",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.testcurrentfile",
+      "Name": "Test Current File",
+      "Tooltip": "positronDeck.testCurrentFile: ctrl+alt+f15",
+      "Icon": "imgs/testCurrentFile-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/testCurrentFile-key",
+          "Title": "Test File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.rtest",
+      "Name": "R Package: Test",
+      "Tooltip": "positronDeck.rTest: ctrl+alt+f16",
+      "Icon": "imgs/rTest-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/rTest-key",
+          "Title": "R Test",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.rloadall",
+      "Name": "R Package: Load All",
+      "Tooltip": "positronDeck.rLoadAll: ctrl+alt+f17",
+      "Icon": "imgs/rLoadAll-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/rLoadAll-key",
+          "Title": "Load All",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.rstyle",
+      "Name": "R Package: Style",
+      "Tooltip": "positronDeck.rStyle: ctrl+alt+f18",
+      "Icon": "imgs/rStyle-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/rStyle-key",
+          "Title": "R Style",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.stopapp",
+      "Name": "Stop App",
+      "Tooltip": "positronDeck.stopApp: ctrl+alt+f19",
+      "Icon": "imgs/stopApp-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/stopApp-key",
+          "Title": "Stop App",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.showlog",
+      "Name": "Show Log",
+      "Tooltip": "positronDeck.showLog: ctrl+alt+f20",
+      "Icon": "imgs/showLog-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/showLog-key",
+          "Title": "Deck Log",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openexplorer",
+      "Name": "Explorer",
+      "Tooltip": "positronDeck.openExplorer: ctrl+alt+shift+f1 a",
+      "Icon": "imgs/openExplorer-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openExplorer-key",
+          "Title": "Explorer",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.opensearch",
+      "Name": "Search in Files",
+      "Tooltip": "positronDeck.openSearch: ctrl+alt+shift+f1 b",
+      "Icon": "imgs/openSearch-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openSearch-key",
+          "Title": "Search in Files",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openextensions",
+      "Name": "Extensions",
+      "Tooltip": "positronDeck.openExtensions: ctrl+alt+shift+f1 c",
+      "Icon": "imgs/openExtensions-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openExtensions-key",
+          "Title": "Extensions",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.opendebug",
+      "Name": "Run and Debug",
+      "Tooltip": "positronDeck.openDebug: ctrl+alt+shift+f1 d",
+      "Icon": "imgs/openDebug-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openDebug-key",
+          "Title": "Run and Debug",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.opentesting",
+      "Name": "Test Explorer",
+      "Tooltip": "positronDeck.openTesting: ctrl+alt+shift+f1 e",
+      "Icon": "imgs/openTesting-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openTesting-key",
+          "Title": "Test Explorer",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openoutput",
+      "Name": "Output",
+      "Tooltip": "positronDeck.openOutput: ctrl+alt+shift+f1 f",
+      "Icon": "imgs/openOutput-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openOutput-key",
+          "Title": "Output",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.opensettings",
+      "Name": "Settings",
+      "Tooltip": "positronDeck.openSettings: ctrl+alt+shift+f1 g",
+      "Icon": "imgs/openSettings-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openSettings-key",
+          "Title": "Settings",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openkeybindings",
+      "Name": "Keyboard Shortcuts",
+      "Tooltip": "positronDeck.openKeybindings: ctrl+alt+shift+f1 h",
+      "Icon": "imgs/openKeybindings-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openKeybindings-key",
+          "Title": "Keyboard Shortcuts",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.quickopen",
+      "Name": "Quick Open File",
+      "Tooltip": "positronDeck.quickOpen: ctrl+alt+shift+f1 i",
+      "Icon": "imgs/quickOpen-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/quickOpen-key",
+          "Title": "Quick Open File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gotosymbol",
+      "Name": "Symbols in File",
+      "Tooltip": "positronDeck.goToSymbol: ctrl+alt+shift+f1 j",
+      "Icon": "imgs/goToSymbol-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/goToSymbol-key",
+          "Title": "Symbols in File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gotoline",
+      "Name": "Go to Line",
+      "Tooltip": "positronDeck.goToLine: ctrl+alt+shift+f1 k",
+      "Icon": "imgs/goToLine-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/goToLine-key",
+          "Title": "Go to Line",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.focuseditor",
+      "Name": "Focus Editor",
+      "Tooltip": "positronDeck.focusEditor: ctrl+alt+shift+f1 l",
+      "Icon": "imgs/focusEditor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/focusEditor-key",
+          "Title": "Focus Editor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.nexteditor",
+      "Name": "Next Editor",
+      "Tooltip": "positronDeck.nextEditor: ctrl+alt+shift+f1 m",
+      "Icon": "imgs/nextEditor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/nextEditor-key",
+          "Title": "Next Editor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.previouseditor",
+      "Name": "Previous Editor",
+      "Tooltip": "positronDeck.previousEditor: ctrl+alt+shift+f1 n",
+      "Icon": "imgs/previousEditor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/previousEditor-key",
+          "Title": "Previous Editor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.navigateback",
+      "Name": "Navigate Back",
+      "Tooltip": "positronDeck.navigateBack: ctrl+alt+shift+f1 o",
+      "Icon": "imgs/navigateBack-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/navigateBack-key",
+          "Title": "Navigate Back",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.navigateforward",
+      "Name": "Navigate Forward",
+      "Tooltip": "positronDeck.navigateForward: ctrl+alt+shift+f1 p",
+      "Icon": "imgs/navigateForward-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/navigateForward-key",
+          "Title": "Navigate Forward",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.reopeneditor",
+      "Name": "Reopen Closed Editor",
+      "Tooltip": "positronDeck.reopenEditor: ctrl+alt+shift+f1 q",
+      "Icon": "imgs/reopenEditor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/reopenEditor-key",
+          "Title": "Reopen Closed Editor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openrecent",
+      "Name": "Recent Projects",
+      "Tooltip": "positronDeck.openRecent: ctrl+alt+shift+f1 r",
+      "Icon": "imgs/openRecent-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openRecent-key",
+          "Title": "Recent Projects",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.opendataconnections",
+      "Name": "Data Connections",
+      "Tooltip": "positronDeck.openDataConnections: ctrl+alt+shift+f1 s",
+      "Icon": "imgs/openDataConnections-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openDataConnections-key",
+          "Title": "Data Connections",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openconnections",
+      "Name": "Connections",
+      "Tooltip": "positronDeck.openConnections: ctrl+alt+shift+f1 t",
+      "Icon": "imgs/openConnections-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openConnections-key",
+          "Title": "Connections",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openvariables",
+      "Name": "Variables",
+      "Tooltip": "positronDeck.openVariables: ctrl+alt+shift+f1 u",
+      "Icon": "imgs/openVariables-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openVariables-key",
+          "Title": "Variables",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openplots",
+      "Name": "Plots",
+      "Tooltip": "positronDeck.openPlots: ctrl+alt+shift+f1 v",
+      "Icon": "imgs/openPlots-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openPlots-key",
+          "Title": "Plots",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openhelp",
+      "Name": "Help Pane",
+      "Tooltip": "positronDeck.openHelp: ctrl+alt+shift+f1 w",
+      "Icon": "imgs/openHelp-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openHelp-key",
+          "Title": "Help Pane",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openhistory",
+      "Name": "Console History",
+      "Tooltip": "positronDeck.openHistory: ctrl+alt+shift+f1 x",
+      "Icon": "imgs/openHistory-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openHistory-key",
+          "Title": "Console History",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openviewer",
+      "Name": "Viewer",
+      "Tooltip": "positronDeck.openViewer: ctrl+alt+shift+f1 y",
+      "Icon": "imgs/openViewer-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openViewer-key",
+          "Title": "Viewer",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openpackages",
+      "Name": "Packages",
+      "Tooltip": "positronDeck.openPackages: ctrl+alt+shift+f1 z",
+      "Icon": "imgs/openPackages-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openPackages-key",
+          "Title": "Packages",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.opensessions",
+      "Name": "Runtime Sessions",
+      "Tooltip": "positronDeck.openSessions: ctrl+alt+shift+f1 0",
+      "Icon": "imgs/openSessions-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openSessions-key",
+          "Title": "Runtime Sessions",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.openassistant",
+      "Name": "Assistant Chat",
+      "Tooltip": "positronDeck.openAssistant: ctrl+alt+shift+f1 1",
+      "Icon": "imgs/openAssistant-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/openAssistant-key",
+          "Title": "Assistant Chat",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.savefile",
+      "Name": "Save File",
+      "Tooltip": "positronDeck.saveFile: ctrl+alt+shift+f1 2",
+      "Icon": "imgs/saveFile-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/saveFile-key",
+          "Title": "Save File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.saveall",
+      "Name": "Save All",
+      "Tooltip": "positronDeck.saveAll: ctrl+alt+shift+f1 3",
+      "Icon": "imgs/saveAll-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/saveAll-key",
+          "Title": "Save All",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.newfile",
+      "Name": "New Untitled File",
+      "Tooltip": "positronDeck.newFile: ctrl+alt+shift+f1 4",
+      "Icon": "imgs/newFile-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/newFile-key",
+          "Title": "New Untitled File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.closeeditor",
+      "Name": "Close Editor",
+      "Tooltip": "positronDeck.closeEditor: ctrl+alt+shift+f1 5",
+      "Icon": "imgs/closeEditor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/closeEditor-key",
+          "Title": "Close Editor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.findinfile",
+      "Name": "Find in File",
+      "Tooltip": "positronDeck.findInFile: ctrl+alt+shift+f1 6",
+      "Icon": "imgs/findInFile-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/findInFile-key",
+          "Title": "Find in File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.replaceinfile",
+      "Name": "Replace in File",
+      "Tooltip": "positronDeck.replaceInFile: ctrl+alt+shift+f1 7",
+      "Icon": "imgs/replaceInFile-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/replaceInFile-key",
+          "Title": "Replace in File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.commentline",
+      "Name": "Toggle Line Comment",
+      "Tooltip": "positronDeck.commentLine: ctrl+alt+shift+f1 8",
+      "Icon": "imgs/commentLine-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/commentLine-key",
+          "Title": "Toggle Line Comment",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.commentblock",
+      "Name": "Toggle Block Comment",
+      "Tooltip": "positronDeck.commentBlock: ctrl+alt+shift+f1 9",
+      "Icon": "imgs/commentBlock-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/commentBlock-key",
+          "Title": "Toggle Block Comment",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.duplicateline",
+      "Name": "Duplicate Line Down",
+      "Tooltip": "positronDeck.duplicateLine: ctrl+alt+shift+f2 a",
+      "Icon": "imgs/duplicateLine-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/duplicateLine-key",
+          "Title": "Duplicate Line Down",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.movelineup",
+      "Name": "Move Line Up",
+      "Tooltip": "positronDeck.moveLineUp: ctrl+alt+shift+f2 b",
+      "Icon": "imgs/moveLineUp-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/moveLineUp-key",
+          "Title": "Move Line Up",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.movelinedown",
+      "Name": "Move Line Down",
+      "Tooltip": "positronDeck.moveLineDown: ctrl+alt+shift+f2 c",
+      "Icon": "imgs/moveLineDown-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/moveLineDown-key",
+          "Title": "Move Line Down",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.selectnextmatch",
+      "Name": "Select Next Match",
+      "Tooltip": "positronDeck.selectNextMatch: ctrl+alt+shift+f2 d",
+      "Icon": "imgs/selectNextMatch-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/selectNextMatch-key",
+          "Title": "Select Next Match",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.selectallmatches",
+      "Name": "Select All Matches",
+      "Tooltip": "positronDeck.selectAllMatches: ctrl+alt+shift+f2 e",
+      "Icon": "imgs/selectAllMatches-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/selectAllMatches-key",
+          "Title": "Select All Matches",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.expandselection",
+      "Name": "Expand Selection",
+      "Tooltip": "positronDeck.expandSelection: ctrl+alt+shift+f2 f",
+      "Icon": "imgs/expandSelection-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/expandSelection-key",
+          "Title": "Expand Selection",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.shrinkselection",
+      "Name": "Shrink Selection",
+      "Tooltip": "positronDeck.shrinkSelection: ctrl+alt+shift+f2 g",
+      "Icon": "imgs/shrinkSelection-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/shrinkSelection-key",
+          "Title": "Shrink Selection",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.renamesymbol",
+      "Name": "Rename Symbol",
+      "Tooltip": "positronDeck.renameSymbol: ctrl+alt+shift+f2 h",
+      "Icon": "imgs/renameSymbol-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/renameSymbol-key",
+          "Title": "Rename Symbol",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.quickfix",
+      "Name": "Quick Fix",
+      "Tooltip": "positronDeck.quickFix: ctrl+alt+shift+f2 i",
+      "Icon": "imgs/quickFix-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/quickFix-key",
+          "Title": "Quick Fix",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gotodefinition",
+      "Name": "Go to Definition",
+      "Tooltip": "positronDeck.goToDefinition: ctrl+alt+shift+f2 j",
+      "Icon": "imgs/goToDefinition-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/goToDefinition-key",
+          "Title": "Go to Definition",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.peekdefinition",
+      "Name": "Peek Definition",
+      "Tooltip": "positronDeck.peekDefinition: ctrl+alt+shift+f2 k",
+      "Icon": "imgs/peekDefinition-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/peekDefinition-key",
+          "Title": "Peek Definition",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.findreferences",
+      "Name": "Find References",
+      "Tooltip": "positronDeck.findReferences: ctrl+alt+shift+f2 l",
+      "Icon": "imgs/findReferences-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/findReferences-key",
+          "Title": "Find References",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.formatselection",
+      "Name": "Format Selection",
+      "Tooltip": "positronDeck.formatSelection: ctrl+alt+shift+f2 m",
+      "Icon": "imgs/formatSelection-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/formatSelection-key",
+          "Title": "Format Selection",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.foldall",
+      "Name": "Fold All",
+      "Tooltip": "positronDeck.foldAll: ctrl+alt+shift+f2 n",
+      "Icon": "imgs/foldAll-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/foldAll-key",
+          "Title": "Fold All",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.unfoldall",
+      "Name": "Unfold All",
+      "Tooltip": "positronDeck.unfoldAll: ctrl+alt+shift+f2 o",
+      "Icon": "imgs/unfoldAll-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/unfoldAll-key",
+          "Title": "Unfold All",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.togglewordwrap",
+      "Name": "Toggle Word Wrap",
+      "Tooltip": "positronDeck.toggleWordWrap: ctrl+alt+shift+f2 p",
+      "Icon": "imgs/toggleWordWrap-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/toggleWordWrap-key",
+          "Title": "Toggle Word Wrap",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.nextproblem",
+      "Name": "Next Problem",
+      "Tooltip": "positronDeck.nextProblem: ctrl+alt+shift+f2 q",
+      "Icon": "imgs/nextProblem-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/nextProblem-key",
+          "Title": "Next Problem",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.previousproblem",
+      "Name": "Previous Problem",
+      "Tooltip": "positronDeck.previousProblem: ctrl+alt+shift+f2 r",
+      "Icon": "imgs/previousProblem-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/previousProblem-key",
+          "Title": "Previous Problem",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.undo",
+      "Name": "Undo",
+      "Tooltip": "positronDeck.undo: ctrl+alt+shift+f2 s",
+      "Icon": "imgs/undo-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/undo-key",
+          "Title": "Undo",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.redo",
+      "Name": "Redo",
+      "Tooltip": "positronDeck.redo: ctrl+alt+shift+f2 t",
+      "Icon": "imgs/redo-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/redo-key",
+          "Title": "Redo",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runwithoutadvancing",
+      "Name": "Run without Advancing",
+      "Tooltip": "positronDeck.runWithoutAdvancing: ctrl+alt+shift+f2 u",
+      "Icon": "imgs/runWithoutAdvancing-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runWithoutAdvancing-key",
+          "Title": "Run without Advancing",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runtocursor",
+      "Name": "Run to Cursor",
+      "Tooltip": "positronDeck.runToCursor: ctrl+alt+shift+f2 v",
+      "Icon": "imgs/runToCursor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runToCursor-key",
+          "Title": "Run to Cursor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runfromcursor",
+      "Name": "Run from Cursor",
+      "Tooltip": "positronDeck.runFromCursor: ctrl+alt+shift+f2 w",
+      "Icon": "imgs/runFromCursor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runFromCursor-key",
+          "Title": "Run from Cursor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.clearconsole",
+      "Name": "Clear Console",
+      "Tooltip": "positronDeck.clearConsole: ctrl+alt+shift+f2 x",
+      "Icon": "imgs/clearConsole-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/clearConsole-key",
+          "Title": "Clear Console",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.selectruntime",
+      "Name": "Select Interpreter",
+      "Tooltip": "positronDeck.selectRuntime: ctrl+alt+shift+f2 y",
+      "Icon": "imgs/selectRuntime-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/selectRuntime-key",
+          "Title": "Select Interpreter",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.newruntime",
+      "Name": "New Console Session",
+      "Tooltip": "positronDeck.newRuntime: ctrl+alt+shift+f2 z",
+      "Icon": "imgs/newRuntime-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/newRuntime-key",
+          "Title": "New Console Session",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.helpatcursor",
+      "Name": "Help at Cursor",
+      "Tooltip": "positronDeck.helpAtCursor: ctrl+alt+shift+f2 0",
+      "Icon": "imgs/helpAtCursor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/helpAtCursor-key",
+          "Title": "Help at Cursor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.viewdataatcursor",
+      "Name": "View Data at Cursor",
+      "Tooltip": "positronDeck.viewDataAtCursor: ctrl+alt+shift+f2 1",
+      "Icon": "imgs/viewDataAtCursor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/viewDataAtCursor-key",
+          "Title": "View Data at Cursor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.viewdatavariable",
+      "Name": "Choose Dataframe",
+      "Tooltip": "positronDeck.viewDataVariable: ctrl+alt+shift+f2 2",
+      "Icon": "imgs/viewDataVariable-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/viewDataVariable-key",
+          "Title": "Choose Dataframe",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.refreshvariables",
+      "Name": "Refresh Variables",
+      "Tooltip": "positronDeck.refreshVariables: ctrl+alt+shift+f2 3",
+      "Icon": "imgs/refreshVariables-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/refreshVariables-key",
+          "Title": "Refresh Variables",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.refreshpackages",
+      "Name": "Refresh Packages",
+      "Tooltip": "positronDeck.refreshPackages: ctrl+alt+shift+f2 4",
+      "Icon": "imgs/refreshPackages-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/refreshPackages-key",
+          "Title": "Refresh Packages",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.importdata",
+      "Name": "Import Data from File",
+      "Tooltip": "positronDeck.importData: ctrl+alt+shift+f2 5",
+      "Icon": "imgs/importData-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/importData-key",
+          "Title": "Import Data from File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.datacopy",
+      "Name": "Copy Data Selection",
+      "Tooltip": "positronDeck.dataCopy: ctrl+alt+shift+f2 6",
+      "Icon": "imgs/dataCopy-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/dataCopy-key",
+          "Title": "Copy Data Selection",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.datasummaryexpand",
+      "Name": "Expand Data Summary",
+      "Tooltip": "positronDeck.dataSummaryExpand: ctrl+alt+shift+f2 7",
+      "Icon": "imgs/dataSummaryExpand-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/dataSummaryExpand-key",
+          "Title": "Expand Data Summary",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.datasummarycollapse",
+      "Name": "Collapse Data Summary",
+      "Tooltip": "positronDeck.dataSummaryCollapse: ctrl+alt+shift+f2 8",
+      "Icon": "imgs/dataSummaryCollapse-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/dataSummaryCollapse-key",
+          "Title": "Collapse Data Summary",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.dataclearsorting",
+      "Name": "Clear Data Sorting",
+      "Tooltip": "positronDeck.dataClearSorting: ctrl+alt+shift+f2 9",
+      "Icon": "imgs/dataClearSorting-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/dataClearSorting-key",
+          "Title": "Clear Data Sorting",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.datatocode",
+      "Name": "Data Filters to Code",
+      "Tooltip": "positronDeck.dataToCode: ctrl+alt+shift+f3 a",
+      "Icon": "imgs/dataToCode-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/dataToCode-key",
+          "Title": "Data Filters to Code",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.plotnext",
+      "Name": "Next Plot",
+      "Tooltip": "positronDeck.plotNext: ctrl+alt+shift+f3 b",
+      "Icon": "imgs/plotNext-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/plotNext-key",
+          "Title": "Next Plot",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.plotprevious",
+      "Name": "Previous Plot",
+      "Tooltip": "positronDeck.plotPrevious: ctrl+alt+shift+f3 c",
+      "Icon": "imgs/plotPrevious-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/plotPrevious-key",
+          "Title": "Previous Plot",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.plotsave",
+      "Name": "Save Plot",
+      "Tooltip": "positronDeck.plotSave: ctrl+alt+shift+f3 d",
+      "Icon": "imgs/plotSave-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/plotSave-key",
+          "Title": "Save Plot",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.plotcopy",
+      "Name": "Copy Plot",
+      "Tooltip": "positronDeck.plotCopy: ctrl+alt+shift+f3 e",
+      "Icon": "imgs/plotCopy-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/plotCopy-key",
+          "Title": "Copy Plot",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.ploteditor",
+      "Name": "Plot in Editor",
+      "Tooltip": "positronDeck.plotEditor: ctrl+alt+shift+f3 f",
+      "Icon": "imgs/plotEditor-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/plotEditor-key",
+          "Title": "Plot in Editor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.plotpopout",
+      "Name": "Pop Out Plot",
+      "Tooltip": "positronDeck.plotPopout: ctrl+alt+shift+f3 g",
+      "Icon": "imgs/plotPopout-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/plotPopout-key",
+          "Title": "Pop Out Plot",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.plotsizing",
+      "Name": "Plot Size Policy",
+      "Tooltip": "positronDeck.plotSizing: ctrl+alt+shift+f3 h",
+      "Icon": "imgs/plotSizing-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/plotSizing-key",
+          "Title": "Plot Size Policy",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.togglesidebar",
+      "Name": "Toggle Primary Sidebar",
+      "Tooltip": "positronDeck.toggleSidebar: ctrl+alt+shift+f3 i",
+      "Icon": "imgs/toggleSidebar-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/toggleSidebar-key",
+          "Title": "Toggle Primary Sidebar",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.togglesecondarysidebar",
+      "Name": "Toggle Secondary Sidebar",
+      "Tooltip": "positronDeck.toggleSecondarySidebar: ctrl+alt+shift+f3 j",
+      "Icon": "imgs/toggleSecondarySidebar-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/toggleSecondarySidebar-key",
+          "Title": "Toggle\nSecondary\nSidebar",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.togglepanel",
+      "Name": "Toggle Panel",
+      "Tooltip": "positronDeck.togglePanel: ctrl+alt+shift+f3 k",
+      "Icon": "imgs/togglePanel-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/togglePanel-key",
+          "Title": "Toggle Panel",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.maximizepanel",
+      "Name": "Maximize Panel",
+      "Tooltip": "positronDeck.maximizePanel: ctrl+alt+shift+f3 l",
+      "Icon": "imgs/maximizePanel-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/maximizePanel-key",
+          "Title": "Maximize Panel",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.zenmode",
+      "Name": "Zen Mode",
+      "Tooltip": "positronDeck.zenMode: ctrl+alt+shift+f3 m",
+      "Icon": "imgs/zenMode-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/zenMode-key",
+          "Title": "Zen Mode",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.fullscreen",
+      "Name": "Full Screen",
+      "Tooltip": "positronDeck.fullScreen: ctrl+alt+shift+f3 n",
+      "Icon": "imgs/fullScreen-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/fullScreen-key",
+          "Title": "Full Screen",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.customizelayout",
+      "Name": "Customize Layout",
+      "Tooltip": "positronDeck.customizeLayout: ctrl+alt+shift+f3 o",
+      "Icon": "imgs/customizeLayout-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/customizeLayout-key",
+          "Title": "Customize Layout",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.spliteditorright",
+      "Name": "Split Editor Right",
+      "Tooltip": "positronDeck.splitEditorRight: ctrl+alt+shift+f3 p",
+      "Icon": "imgs/splitEditorRight-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/splitEditorRight-key",
+          "Title": "Split Editor Right",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.spliteditordown",
+      "Name": "Split Editor Down",
+      "Tooltip": "positronDeck.splitEditorDown: ctrl+alt+shift+f3 q",
+      "Icon": "imgs/splitEditorDown-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/splitEditorDown-key",
+          "Title": "Split Editor Down",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layoutsingle",
+      "Name": "Single Editor",
+      "Tooltip": "positronDeck.layoutSingle: ctrl+alt+shift+f3 r",
+      "Icon": "imgs/layoutSingle-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutSingle-key",
+          "Title": "Single Editor",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layoutcolumns",
+      "Name": "Two Editor Columns",
+      "Tooltip": "positronDeck.layoutColumns: ctrl+alt+shift+f3 s",
+      "Icon": "imgs/layoutColumns-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutColumns-key",
+          "Title": "Two Editor Columns",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layoutrows",
+      "Name": "Two Editor Rows",
+      "Tooltip": "positronDeck.layoutRows: ctrl+alt+shift+f3 t",
+      "Icon": "imgs/layoutRows-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutRows-key",
+          "Title": "Two Editor Rows",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layoutgrid",
+      "Name": "Editor Grid",
+      "Tooltip": "positronDeck.layoutGrid: ctrl+alt+shift+f3 u",
+      "Icon": "imgs/layoutGrid-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutGrid-key",
+          "Title": "Editor Grid",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.focusnextgroup",
+      "Name": "Next Editor Group",
+      "Tooltip": "positronDeck.focusNextGroup: ctrl+alt+shift+f3 v",
+      "Icon": "imgs/focusNextGroup-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/focusNextGroup-key",
+          "Title": "Next Editor Group",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.moveeditorright",
+      "Name": "Move Editor Right",
+      "Tooltip": "positronDeck.moveEditorRight: ctrl+alt+shift+f3 w",
+      "Icon": "imgs/moveEditorRight-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/moveEditorRight-key",
+          "Title": "Move Editor Right",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.zoomin",
+      "Name": "Zoom In",
+      "Tooltip": "positronDeck.zoomIn: ctrl+alt+shift+f3 x",
+      "Icon": "imgs/zoomIn-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/zoomIn-key",
+          "Title": "Zoom In",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.zoomout",
+      "Name": "Zoom Out",
+      "Tooltip": "positronDeck.zoomOut: ctrl+alt+shift+f3 y",
+      "Icon": "imgs/zoomOut-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/zoomOut-key",
+          "Title": "Zoom Out",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.zoomreset",
+      "Name": "Reset Zoom",
+      "Tooltip": "positronDeck.zoomReset: ctrl+alt+shift+f3 z",
+      "Icon": "imgs/zoomReset-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/zoomReset-key",
+          "Title": "Reset Zoom",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.resetviewlocations",
+      "Name": "Reset View Locations",
+      "Tooltip": "positronDeck.resetViewLocations: ctrl+alt+shift+f3 0",
+      "Icon": "imgs/resetViewLocations-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/resetViewLocations-key",
+          "Title": "Reset View Locations",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layoutstacked",
+      "Name": "Stacked Data Science",
+      "Tooltip": "positronDeck.layoutStacked: ctrl+alt+shift+f3 1",
+      "Icon": "imgs/layoutStacked-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutStacked-key",
+          "Title": "Stacked Data Science",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layoutsidebyside",
+      "Name": "Side-by-side Data Science",
+      "Tooltip": "positronDeck.layoutSideBySide: ctrl+alt+shift+f3 2",
+      "Icon": "imgs/layoutSideBySide-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutSideBySide-key",
+          "Title": "Side-by-side\nData\nScience",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layoutnotebook",
+      "Name": "Notebook Layout",
+      "Tooltip": "positronDeck.layoutNotebook: ctrl+alt+shift+f3 3",
+      "Icon": "imgs/layoutNotebook-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutNotebook-key",
+          "Title": "Notebook Layout",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layoutassistant",
+      "Name": "Assistant Layout",
+      "Tooltip": "positronDeck.layoutAssistant: ctrl+alt+shift+f3 4",
+      "Icon": "imgs/layoutAssistant-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutAssistant-key",
+          "Title": "Assistant Layout",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.layouthelp",
+      "Name": "Help beside Console",
+      "Tooltip": "positronDeck.layoutHelp: ctrl+alt+shift+f3 5",
+      "Icon": "imgs/layoutHelp-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/layoutHelp-key",
+          "Title": "Help beside Console",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.maximizeconsolearea",
+      "Name": "Full-size Panel",
+      "Tooltip": "positronDeck.maximizeConsoleArea: ctrl+alt+shift+f3 6",
+      "Icon": "imgs/maximizeConsoleArea-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/maximizeConsoleArea-key",
+          "Title": "Full-size Panel",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.maximizedataarea",
+      "Name": "Full-size Data Sidebar",
+      "Tooltip": "positronDeck.maximizeDataArea: ctrl+alt+shift+f3 7",
+      "Icon": "imgs/maximizeDataArea-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/maximizeDataArea-key",
+          "Title": "Full-size Data Sidebar",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitfetch",
+      "Name": "Git: Fetch",
+      "Tooltip": "positronDeck.gitFetch: ctrl+alt+shift+f3 8",
+      "Icon": "imgs/gitFetch-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitFetch-key",
+          "Title": "Git\nFetch",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitstagefile",
+      "Name": "Git: Stage File",
+      "Tooltip": "positronDeck.gitStageFile: ctrl+alt+shift+f3 9",
+      "Icon": "imgs/gitStageFile-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitStageFile-key",
+          "Title": "Git\nStage File",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitunstageall",
+      "Name": "Git: Unstage All",
+      "Tooltip": "positronDeck.gitUnstageAll: ctrl+alt+shift+f4 a",
+      "Icon": "imgs/gitUnstageAll-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitUnstageAll-key",
+          "Title": "Git\nUnstage All",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitbranch",
+      "Name": "Git: Create Branch",
+      "Tooltip": "positronDeck.gitBranch: ctrl+alt+shift+f4 b",
+      "Icon": "imgs/gitBranch-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitBranch-key",
+          "Title": "Git\nCreate Branch",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitstash",
+      "Name": "Git: Stash",
+      "Tooltip": "positronDeck.gitStash: ctrl+alt+shift+f4 c",
+      "Icon": "imgs/gitStash-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitStash-key",
+          "Title": "Git\nStash",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.gitstashpop",
+      "Name": "Git: Pop Stash",
+      "Tooltip": "positronDeck.gitStashPop: ctrl+alt+shift+f4 d",
+      "Icon": "imgs/gitStashPop-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/gitStashPop-key",
+          "Title": "Git\nPop Stash",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.newterminal",
+      "Name": "New Terminal",
+      "Tooltip": "positronDeck.newTerminal: ctrl+alt+shift+f4 e",
+      "Icon": "imgs/newTerminal-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/newTerminal-key",
+          "Title": "New Terminal",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.splitterminal",
+      "Name": "Split Terminal",
+      "Tooltip": "positronDeck.splitTerminal: ctrl+alt+shift+f4 f",
+      "Icon": "imgs/splitTerminal-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/splitTerminal-key",
+          "Title": "Split Terminal",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.clearterminal",
+      "Name": "Clear Terminal",
+      "Tooltip": "positronDeck.clearTerminal: ctrl+alt+shift+f4 g",
+      "Icon": "imgs/clearTerminal-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/clearTerminal-key",
+          "Title": "Clear Terminal",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.nextterminal",
+      "Name": "Next Terminal",
+      "Tooltip": "positronDeck.nextTerminal: ctrl+alt+shift+f4 h",
+      "Icon": "imgs/nextTerminal-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/nextTerminal-key",
+          "Title": "Next Terminal",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.previousterminal",
+      "Name": "Previous Terminal",
+      "Tooltip": "positronDeck.previousTerminal: ctrl+alt+shift+f4 i",
+      "Icon": "imgs/previousTerminal-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/previousTerminal-key",
+          "Title": "Previous Terminal",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runtask",
+      "Name": "Run Task",
+      "Tooltip": "positronDeck.runTask: ctrl+alt+shift+f4 j",
+      "Icon": "imgs/runTask-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runTask-key",
+          "Title": "Run Task",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runbuildtask",
+      "Name": "Run Build Task",
+      "Tooltip": "positronDeck.runBuildTask: ctrl+alt+shift+f4 k",
+      "Icon": "imgs/runBuildTask-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runBuildTask-key",
+          "Title": "Run Build Task",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.debugstart",
+      "Name": "Start Debugging",
+      "Tooltip": "positronDeck.debugStart: ctrl+alt+shift+f4 l",
+      "Icon": "imgs/debugStart-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/debugStart-key",
+          "Title": "Start Debugging",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.debugstop",
+      "Name": "Stop Debugging",
+      "Tooltip": "positronDeck.debugStop: ctrl+alt+shift+f4 m",
+      "Icon": "imgs/debugStop-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/debugStop-key",
+          "Title": "Stop Debugging",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.debugcontinue",
+      "Name": "Debug: Continue",
+      "Tooltip": "positronDeck.debugContinue: ctrl+alt+shift+f4 n",
+      "Icon": "imgs/debugContinue-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/debugContinue-key",
+          "Title": "Debug\nContinue",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.debugstepover",
+      "Name": "Debug: Step Over",
+      "Tooltip": "positronDeck.debugStepOver: ctrl+alt+shift+f4 o",
+      "Icon": "imgs/debugStepOver-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/debugStepOver-key",
+          "Title": "Debug\nStep Over",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.debugstepinto",
+      "Name": "Debug: Step Into",
+      "Tooltip": "positronDeck.debugStepInto: ctrl+alt+shift+f4 p",
+      "Icon": "imgs/debugStepInto-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/debugStepInto-key",
+          "Title": "Debug\nStep Into",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.debugstepout",
+      "Name": "Debug: Step Out",
+      "Tooltip": "positronDeck.debugStepOut: ctrl+alt+shift+f4 q",
+      "Icon": "imgs/debugStepOut-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/debugStepOut-key",
+          "Title": "Debug\nStep Out",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.togglebreakpoint",
+      "Name": "Toggle Breakpoint",
+      "Tooltip": "positronDeck.toggleBreakpoint: ctrl+alt+shift+f4 r",
+      "Icon": "imgs/toggleBreakpoint-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/toggleBreakpoint-key",
+          "Title": "Toggle Breakpoint",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookruncell",
+      "Name": "Notebook: Run Cell",
+      "Tooltip": "positronDeck.notebookRunCell: ctrl+alt+shift+f4 s",
+      "Icon": "imgs/notebookRunCell-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookRunCell-key",
+          "Title": "Notebook\nRun Cell",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookrunnext",
+      "Name": "Notebook: Run and Next",
+      "Tooltip": "positronDeck.notebookRunNext: ctrl+alt+shift+f4 t",
+      "Icon": "imgs/notebookRunNext-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookRunNext-key",
+          "Title": "Notebook\nRun and Next",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookrunall",
+      "Name": "Notebook: Run All",
+      "Tooltip": "positronDeck.notebookRunAll: ctrl+alt+shift+f4 u",
+      "Icon": "imgs/notebookRunAll-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookRunAll-key",
+          "Title": "Notebook\nRun All",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookrunabove",
+      "Name": "Notebook: Run Above",
+      "Tooltip": "positronDeck.notebookRunAbove: ctrl+alt+shift+f4 v",
+      "Icon": "imgs/notebookRunAbove-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookRunAbove-key",
+          "Title": "Notebook\nRun Above",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookrunbelow",
+      "Name": "Notebook: Run Below",
+      "Tooltip": "positronDeck.notebookRunBelow: ctrl+alt+shift+f4 w",
+      "Icon": "imgs/notebookRunBelow-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookRunBelow-key",
+          "Title": "Notebook\nRun Below",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookinsertcode",
+      "Name": "Notebook: Insert Code",
+      "Tooltip": "positronDeck.notebookInsertCode: ctrl+alt+shift+f4 x",
+      "Icon": "imgs/notebookInsertCode-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookInsertCode-key",
+          "Title": "Notebook\nInsert Code",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookinsertmarkdown",
+      "Name": "Notebook: Insert Markdown",
+      "Tooltip": "positronDeck.notebookInsertMarkdown: ctrl+alt+shift+f4 y",
+      "Icon": "imgs/notebookInsertMarkdown-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookInsertMarkdown-key",
+          "Title": "NB\nInsert\nMarkdown",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookclearoutputs",
+      "Name": "Notebook: Clear Outputs",
+      "Tooltip": "positronDeck.notebookClearOutputs: ctrl+alt+shift+f4 z",
+      "Icon": "imgs/notebookClearOutputs-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookClearOutputs-key",
+          "Title": "Notebook\nClear Outputs",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.notebookstop",
+      "Name": "Notebook: Stop All",
+      "Tooltip": "positronDeck.notebookStop: ctrl+alt+shift+f4 0",
+      "Icon": "imgs/notebookStop-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/notebookStop-key",
+          "Title": "Notebook\nStop All",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.saveandrun",
+      "Name": "Save and Run",
+      "Tooltip": "positronDeck.saveAndRun: ctrl+alt+shift+f4 1",
+      "Icon": "imgs/saveAndRun-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/saveAndRun-key",
+          "Title": "Save and Run",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.formatandsave",
+      "Name": "Format and Save",
+      "Tooltip": "positronDeck.formatAndSave: ctrl+alt+shift+f4 2",
+      "Icon": "imgs/formatAndSave-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/formatAndSave-key",
+          "Title": "Format and Save",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.saveandtest",
+      "Name": "Save and Test",
+      "Tooltip": "positronDeck.saveAndTest: ctrl+alt+shift+f4 3",
+      "Icon": "imgs/saveAndTest-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/saveAndTest-key",
+          "Title": "Save and Test",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.reviewworkspace",
+      "Name": "Review Workspace",
+      "Tooltip": "positronDeck.reviewWorkspace: ctrl+alt+shift+f4 4",
+      "Icon": "imgs/reviewWorkspace-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/reviewWorkspace-key",
+          "Title": "Review Workspace",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.analysisworkspace",
+      "Name": "Analysis Workspace",
+      "Tooltip": "positronDeck.analysisWorkspace: ctrl+alt+shift+f4 5",
+      "Icon": "imgs/analysisWorkspace-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/analysisWorkspace-key",
+          "Title": "Analysis Workspace",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.quartoworkspace",
+      "Name": "Quarto Workspace",
+      "Tooltip": "positronDeck.quartoWorkspace: ctrl+alt+shift+f4 6",
+      "Icon": "imgs/quartoWorkspace-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/quartoWorkspace-key",
+          "Title": "Quarto Workspace",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runworkflow",
+      "Name": "Choose Workflow",
+      "Tooltip": "positronDeck.runWorkflow: ctrl+alt+shift+f4 7",
+      "Icon": "imgs/runWorkflow-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runWorkflow-key",
+          "Title": "Choose Workflow",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.diagnostics",
+      "Name": "Check Action Availability",
+      "Tooltip": "positronDeck.diagnostics: ctrl+alt+shift+f4 8",
+      "Icon": "imgs/diagnostics-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/diagnostics-key",
+          "Title": "Check\nAction\nAvailability",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.configureterminal",
+      "Name": "Enable Hotkeys in Terminal",
+      "Tooltip": "positronDeck.configureTerminal: ctrl+alt+shift+f4 9",
+      "Icon": "imgs/configureTerminal-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/configureTerminal-key",
+          "Title": "Enable\nHotkeys\nin",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.workflowslot1",
+      "Name": "Custom Workflow 1",
+      "Tooltip": "positronDeck.workflowSlot1: ctrl+alt+shift+f5 a",
+      "Icon": "imgs/workflowSlot1-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/workflowSlot1-key",
+          "Title": "Workflow 1",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.workflowslot2",
+      "Name": "Custom Workflow 2",
+      "Tooltip": "positronDeck.workflowSlot2: ctrl+alt+shift+f5 b",
+      "Icon": "imgs/workflowSlot2-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/workflowSlot2-key",
+          "Title": "Workflow 2",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.workflowslot3",
+      "Name": "Custom Workflow 3",
+      "Tooltip": "positronDeck.workflowSlot3: ctrl+alt+shift+f5 c",
+      "Icon": "imgs/workflowSlot3-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/workflowSlot3-key",
+          "Title": "Workflow 3",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.workflowslot4",
+      "Name": "Custom Workflow 4",
+      "Tooltip": "positronDeck.workflowSlot4: ctrl+alt+shift+f5 d",
+      "Icon": "imgs/workflowSlot4-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/workflowSlot4-key",
+          "Title": "Workflow 4",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.workflowslot5",
+      "Name": "Custom Workflow 5",
+      "Tooltip": "positronDeck.workflowSlot5: ctrl+alt+shift+f5 e",
+      "Icon": "imgs/workflowSlot5-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/workflowSlot5-key",
+          "Title": "Workflow 5",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.workflowslot6",
+      "Name": "Custom Workflow 6",
+      "Tooltip": "positronDeck.workflowSlot6: ctrl+alt+shift+f5 f",
+      "Icon": "imgs/workflowSlot6-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/workflowSlot6-key",
+          "Title": "Workflow 6",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.workflowslot7",
+      "Name": "Custom Workflow 7",
+      "Tooltip": "positronDeck.workflowSlot7: ctrl+alt+shift+f5 g",
+      "Icon": "imgs/workflowSlot7-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/workflowSlot7-key",
+          "Title": "Workflow 7",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.workflowslot8",
+      "Name": "Custom Workflow 8",
+      "Tooltip": "positronDeck.workflowSlot8: ctrl+alt+shift+f5 h",
+      "Icon": "imgs/workflowSlot8-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/workflowSlot8-key",
+          "Title": "Workflow 8",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runcell",
+      "Name": "Run Code Cell",
+      "Tooltip": "positronDeck.runCell: ctrl+alt+shift+f5 i",
+      "Icon": "imgs/runCell-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runCell-key",
+          "Title": "Run Code Cell",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runcellnext",
+      "Name": "Run Cell and Advance",
+      "Tooltip": "positronDeck.runCellNext: ctrl+alt+shift+f5 j",
+      "Icon": "imgs/runCellNext-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runCellNext-key",
+          "Title": "Run Cell and Advance",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runallcells",
+      "Name": "Run All Script Cells",
+      "Tooltip": "positronDeck.runAllCells: ctrl+alt+shift+f5 k",
+      "Icon": "imgs/runAllCells-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runAllCells-key",
+          "Title": "Run All Script Cells",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runcellsabove",
+      "Name": "Run Script Cells Above",
+      "Tooltip": "positronDeck.runCellsAbove: ctrl+alt+shift+f5 l",
+      "Icon": "imgs/runCellsAbove-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runCellsAbove-key",
+          "Title": "Run Script Cells Above",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.runcellsbelow",
+      "Name": "Run Script Cells Below",
+      "Tooltip": "positronDeck.runCellsBelow: ctrl+alt+shift+f5 m",
+      "Icon": "imgs/runCellsBelow-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/runCellsBelow-key",
+          "Title": "Run Script Cells Below",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.nextcell",
+      "Name": "Next Code Cell",
+      "Tooltip": "positronDeck.nextCell: ctrl+alt+shift+f5 n",
+      "Icon": "imgs/nextCell-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/nextCell-key",
+          "Title": "Next Code Cell",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.previouscell",
+      "Name": "Previous Code Cell",
+      "Tooltip": "positronDeck.previousCell: ctrl+alt+shift+f5 o",
+      "Icon": "imgs/previousCell-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/previousCell-key",
+          "Title": "Previous Code Cell",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    },
+    {
+      "UUID": "org.positron-deck.shortcuts.insertcell",
+      "Name": "Insert Code Cell",
+      "Tooltip": "positronDeck.insertCell: ctrl+alt+shift+f5 p",
+      "Icon": "imgs/insertCell-list",
+      "Controllers": [
+        "Keypad"
+      ],
+      "SupportedInMultiActions": true,
+      "States": [
+        {
+          "Image": "imgs/insertCell-key",
+          "Title": "Insert Code Cell",
+          "TitleAlignment": "bottom",
+          "FontSize": 11
+        }
+      ]
+    }
+  ]
+}
