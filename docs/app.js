@@ -8,16 +8,16 @@ function details(a){
  if(a.targets.length)out.append(node('h3','Native command'),node('code',a.targets.join('\n')));
  out.append(node('p',a.trusted?'Requires a trusted workspace.':'Available in restricted workspaces.'));
  if(a.confirm)out.append(node('p',`Confirmation: ${a.confirm}`));
- if(a.host==='Positron')out.append(node('p','Requires the relevant Positron feature and active view. Newer features may be absent in older releases. Run Check Action Availability to inspect your host.'));
+ if(a.host==='Positron')out.append(node('p','Open the relevant view in Positron before using this action. If it is unavailable, run Check Action Availability; your version may not include the feature yet.'));
  if(!el('detail').open)el('detail').showModal();
 }
 function renderCards(){
  const q=el('search').value.trim().toLowerCase();const host=el('host').value;
  const matches=actions.filter(a=>(category==='all'||a.group===category)&&(!host||a.host===host)&&`${a.name} ${a.command} ${a.description} ${a.group} ${a.targets.join(' ')}`.toLowerCase().includes(q));
- el('result-count').textContent=`${matches.length} of ${actions.length} actions · select a card for the exact mapping`;
+ el('result-count').textContent=`${matches.length} of ${actions.length} actions · open a card to see its shortcut and command`;
  const cards=el('cards');cards.replaceChildren();
  for(const a of matches){const card=node('button',undefined,'card');card.type='button';const img=node('img');img.src=`icons/${a.id}.svg`;img.alt='';img.loading='lazy';card.append(img,node('h3',a.name),node('p',a.description),node('span',`${names[a.group]} · ${a.host}`,'badge'));card.addEventListener('click',()=>details(a));cards.append(card);}
- if(!matches.length)cards.append(node('p','No matching actions. Try another search or reset the category.'));
+ if(!matches.length)cards.append(node('p','No actions match these filters. Try a different search, or choose All actions and All hosts.'));
 }
 function renderDeck(index=0){
  const deck=el('deck');deck.replaceChildren();pages.forEach((p,i)=>{const b=node('button',p.name,'page-key'+(index===i?' active':''));b.setAttribute('aria-pressed',String(index===i));b.addEventListener('click',()=>renderDeck(i));deck.append(b);});
@@ -31,6 +31,6 @@ async function init(){
  for(const id of ['all',...new Set(actions.map(a=>a.group))]){const b=node('button',names[id]||id,'chip'+(id==='all'?' active':''));b.setAttribute('aria-pressed',String(id==='all'));b.addEventListener('click',()=>{category=id;el('categories').querySelectorAll('button').forEach(n=>{n.classList.toggle('active',n===b);n.setAttribute('aria-pressed',String(n===b));});renderCards();});el('categories').append(b);}
  for(const [id,setting] of Object.entries(data[2])){const tr=node('tr');const first=node('td');first.append(node('code',id));tr.append(first,node('td',JSON.stringify(setting.default)),node('td',setting.description));el('settings-table').append(tr);}
  renderCards();renderDeck();
- }catch{el('result-count').textContent='Could not load the action catalog. Use the Markdown reference below or serve this folder over HTTP.';}
+ }catch{el('result-count').textContent='The action list could not load. Try reloading the page, or use the Markdown reference below. If you opened a downloaded copy, serve the folder over HTTP.';}
 }
 el('search').addEventListener('input',renderCards);el('host').addEventListener('change',renderCards);el('close-detail').addEventListener('click',()=>el('detail').close());el('detail').addEventListener('click',e=>{if(e.target===el('detail'))el('detail').close();});void init();
