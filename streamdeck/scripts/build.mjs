@@ -15,7 +15,7 @@ for(const arch of ['win32_x64','win32_arm64']) {
 }
 const actions=JSON.parse(await fs.readFile('src/actions.json','utf8'));
 const manifest={
- $schema:'https://schemas.elgato.com/streamdeck/plugins/manifest.json',UUID:'org.positron-deck.shortcuts',Name:'Positron Deck',Category:'Positron Deck',CategoryIcon:'imgs/category',Author:'Jan-Hendrik Weinert',Description:'Ready-to-drag hotkey actions for Positron Deck. Windows only; no direct connection to the IDE.',Version:'0.2.0.0',SDKVersion:2,Software:{MinimumVersion:'7.1'},OS:[{Platform:'windows',MinimumVersion:'10'}],Nodejs:{Version:'24'},CodePath:'bin/plugin.js',Icon:'imgs/plugin',PropertyInspectorPath:'ui/inspector.html',
+ $schema:'https://schemas.elgato.com/streamdeck/plugins/manifest.json',UUID:'org.positron-deck.shortcuts',Name:'Positron Deck',Category:'Positron Deck',CategoryIcon:'imgs/category',Author:'janweinert',Description:'Ready-to-drag hotkey actions for Positron Deck. Windows only; no direct connection to the IDE.',Version:'0.2.1.0',SDKVersion:3,Software:{MinimumVersion:'7.1'},OS:[{Platform:'windows',MinimumVersion:'10'}],Nodejs:{Version:'24'},CodePath:'bin/plugin.js',Icon:'imgs/plugin',PropertyInspectorPath:'ui/inspector.html',
  Actions:actions.map(p=>({UUID:p.uuid,Name:p.name,Tooltip:`${p.command}: ${p.shortcut}`,Icon:`imgs/${p.id}-list`,Controllers:['Keypad'],SupportedInMultiActions:true,States:[{Image:`imgs/${p.id}-key`,Title:p.title,TitleAlignment:'bottom',FontSize:11}]}))
 };
 await fs.writeFile(`${dir}/manifest.json`,JSON.stringify(manifest,null,2)+'\n');
