@@ -1,6 +1,6 @@
 # Marketplace submission
 
-Prepared for Positron Deck 0.2.0. These files do not mean that either marketplace listing is published. `listing.json` records the actual submission status and leaves listing URLs empty until they are verified.
+Prepared for IDE extension 0.2.0 and Stream Deck plugin 0.2.1. These files do not mean that either marketplace listing is published. `listing.json` records the actual submission status and leaves listing URLs empty until they are verified.
 
 ## Open VSX
 
@@ -10,7 +10,7 @@ The Eclipse account needs to be linked to the publishing GitHub account and the 
 
 ## Elgato Marketplace
 
-Use the existing release artifact `org.positron-deck.shortcuts.streamDeckPlugin`. Keep the UUID `org.positron-deck.shortcuts` and the existing action IDs so installed buttons continue working. The listing is free.
+Build the Marketplace-compatible 0.2.1 plugin with `npm run package --prefix streamdeck` and use `streamdeck/dist/org.positron-deck.shortcuts.streamDeckPlugin`. The existing GitHub v0.2.0 installer uses SDKVersion 2 and was rejected by the Maker Console. Version 0.2.1 uses SDKVersion 3 for Marketplace DRM compatibility, retains the MIT license, and passed all 23 plugin tests and official package validation. The plugin does not read its manifest or modify shipped files at runtime. Keep the UUID `org.positron-deck.shortcuts` and the existing action IDs so installed buttons continue working. The listing is free.
 
 - App icon: `app-icon.png`, 288 × 288.
 - Thumbnail: `thumbnail.png`, 1920 × 960.
@@ -20,7 +20,7 @@ Use the existing release artifact `org.positron-deck.shortcuts.streamDeckPlugin`
 
 The artwork uses the project's own logo and action icons. It illustrates actual features without presenting mockups as screenshots of a running IDE or a physical device. Vector originals and a generator are included; regeneration requires Python with CairoSVG (`python -m pip install cairosvg`, then `python marketplace/generate-media.py`).
 
-Use the author's name, JanWein handle and GitHub support link for the Maker organization. The account holder must choose the region (Elgato says it cannot be changed) and review the Maker Agreement before submission.
+The Maker organization is `janweinert`, handle `janwein`, region Germany. GitHub is `JanWein` and the website is `https://janweinert.com`. The account holder has accepted the Maker Agreement. Elgato submission is confirmed as Pending review for 0.2.1, with automatic publication after approval enabled. GitHub is linked to Eclipse. The publisher reports that the Open VSX Publisher Agreement is signed and extension 0.2.0 is under review. Neither public listing is verified yet.
 
 Elgato reviews submissions before publication. A submitted or approved item must not be described as available until its public listing works. The plugin intentionally exposes 192 individually draggable, configurable actions, as requested for this project. Elgato recommends grouping related actions and staying between 2 and 30; this may require changes during review. Keep all existing UUIDs if a later revision hides legacy actions and introduces grouped selectors.
 
