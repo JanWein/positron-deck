@@ -1,5 +1,7 @@
 <p align="center"><img src="docs/assets/logo.svg" width="76" alt="Positron Deck logo"></p>
 <h1 align="center">Positron Deck</h1>
+Marketplace status (17 September 2026): the IDE extension is under review on Open VSX; Stream Deck plugin 0.2.1 is pending Elgato review and will publish automatically after approval. Neither listing is public yet. Use the GitHub release installers while reviews are pending. Plugin 0.2.1 is a packaging update and works with IDE extension 0.2.0.
+
 <p align="center"><strong>Your work, at your fingertips.</strong><br>192 tactile shortcuts for Positron, a Stream Deck companion and a workflow toolkit.</p>
 <p align="center"><a href="https://janwein.github.io/positron-deck/">Documentation & interactive XL preview</a> · <a href="https://github.com/JanWein/positron-deck/releases/latest">Download both packages</a> · <a href="docs/COMMANDS.md">All actions</a></p>
 
