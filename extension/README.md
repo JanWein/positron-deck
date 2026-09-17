@@ -1,5 +1,7 @@
 # Positron Deck IDE extension
 
+Marketplace status (17 September 2026): the IDE extension is under review on Open VSX; Stream Deck plugin 0.2.1 is pending Elgato review and will publish automatically after approval. Neither listing is public yet. Use the GitHub release installers while reviews are pending. Plugin 0.2.1 is a packaging update and works with IDE extension 0.2.0.
+
 192 hotkey-driven commands for Positron Desktop, Positron Pro in Workbench and compatible VS Code functionality. This is the IDE half of [Positron Deck](https://github.com/JanWein/positron-deck).
 
 [Full documentation](https://janwein.github.io/positron-deck/) · [Command reference](https://github.com/JanWein/positron-deck/blob/main/docs/COMMANDS.md) · [Downloads](https://github.com/JanWein/positron-deck/releases/latest)
