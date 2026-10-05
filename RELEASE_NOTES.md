@@ -1,11 +1,14 @@
-Positron Deck 0.3.0 brings configurable Stream Deck actions. This release includes both current installers:
+Positron Deck 0.3.1 fixes function selection in the Stream Deck property inspector. This release includes both current installers:
 
 | Component | Version | Install on |
 |---|---|---|
-| Stream Deck companion | 0.3.0 | Local Windows computer |
+| Stream Deck companion | 0.3.1 | Local Windows computer |
 | Positron / VS Code extension | 0.2.0 | Positron, VS Code or your remote Workbench session |
 
 ### What changed
+
+- Function selection stays selected instead of resetting to the first entry. The native dropdown is kept intact and changes made during connection setup are saved.
+- Button titles follow the selected function. Common functions now have distinct symbols; other functions show a short function badge on their category icon.
 
 - All 192 functions are available through 14 groups: Code, Navigation, Editor, Data, Layout, Git, Terminal, Debug, Notebooks, Language Tools, Quarto, Apps, Deploy and Workflows.
 - Choose a function in the property inspector. The button title and icon update automatically.
