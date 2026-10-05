@@ -4,6 +4,16 @@ import { Services } from '../services';
 import { activeEditor, savedDocument } from '../utils/editor';
 import { UserError } from '../utils/errors';
 export function registerCode(registry: Registry, s: Services): void {
+  registry.add('insertCell', async () => {
+    const doc = activeEditor().document;
+    if (doc.languageId === 'quarto' || /\.qmd$/i.test(doc.uri.path)) {
+      await s.bridge.run('quarto.insertCodeCell', [], 'quarto.quarto');
+    } else if (['r', 'python'].includes(doc.languageId)) {
+      await s.bridge.run('positron.insertCodeCell', [], 'positron.positron-code-cells');
+    } else {
+      throw new UserError('Insert Code Cell supports Quarto (.qmd), R and Python source files.');
+    }
+  });
   registry.add('runSelection', async () => {
     const editor = activeEditor();
     const language = editor.document.languageId;
