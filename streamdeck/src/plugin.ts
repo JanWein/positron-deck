@@ -1,4 +1,6 @@
 import streamDeck from '@elgato/streamdeck';
+import {readFileSync} from 'node:fs';
+import {functionImage} from './presentation.js';
 import {resolvePreset,groups} from './grouping.js';
 import {ShortcutEngine,type Settings} from './engine.js';
 import {createWindowsSender} from './windows.js';
@@ -25,7 +27,8 @@ async function refresh(event: {action: {manifestId:string;setTitle:(title:string
   if(!groups.some(g=>g.uuid===event.action.manifestId))return;
   const preset=resolvePreset(event.action.manifestId,event.payload.settings);
   await event.action.setTitle(preset.title);
-  await event.action.setImage(`imgs/${preset.id}-key.svg`);
+  const svg=readFileSync(new URL(`../imgs/${preset.id}-key.svg`,import.meta.url),'utf8');
+  await event.action.setImage(functionImage(svg,preset));
 }
 streamDeck.actions.onWillAppear<Settings>(event=>{void refresh(event).catch(()=>streamDeck.logger.warn('selection.refresh.failed'));});
 streamDeck.settings.onDidReceiveSettings<Settings>(event=>{void refresh(event).catch(()=>streamDeck.logger.warn('selection.refresh.failed'));});
