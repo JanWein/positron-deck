@@ -1,6 +1,6 @@
 import {parseShortcut,ShortcutError,type Stroke} from './shortcuts.js';
 export interface Preset { uuid:string; command:string; shortcut:string; fallback:string }
-export type Settings = { mode?:string; shortcut?:string; delay?:number };
+export type Settings = { mode?:string; shortcut?:string; delay?:number; command?:string; language?:string };
 export interface KeySender { foreground(): string; send(stroke:Stroke):void }
 export function resolveStrokes(preset:Preset,settings:Settings):Stroke[] {
   switch (settings.mode ?? 'default') {
