@@ -33,7 +33,7 @@ Generated from `catalog/actions.json`. Host availability is checked at execution
 | Run Script Cells Below | `positronDeck.runCellsBelow`<br>`ctrl+alt+shift+f5 m` | Run script cells below the current cell. **Host:** Positron. Native: `positron.runCellsBelow`.  |
 | Next Code Cell | `positronDeck.nextCell`<br>`ctrl+alt+shift+f5 n` | Navigate to the next script cell. **Host:** Positron. Native: `positron.goToNextCell`.  |
 | Previous Code Cell | `positronDeck.previousCell`<br>`ctrl+alt+shift+f5 o` | Navigate to the previous script cell. **Host:** Positron. Native: `positron.goToPreviousCell`.  |
-| Insert Code Cell | `positronDeck.insertCell`<br>`ctrl+alt+shift+f5 p` | Insert a code-cell delimiter in an R or Python script. **Host:** Positron. Native: `positron.insertCodeCell`.  |
+| Insert Code Cell | `positronDeck.insertCell`<br>`ctrl+alt+shift+f5 p` | Insert a Quarto code chunk in .qmd files, or a code-cell delimiter in R and Python scripts. Uses the native command for the active document. **Host:** Provider. Native: `quarto.insertCodeCell`, `positron.insertCodeCell`.  |
 
 ## app
 

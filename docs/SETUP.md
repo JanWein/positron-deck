@@ -1,12 +1,12 @@
 # Setup, providers and troubleshooting
 
-Marketplace status (17 September 2026): the IDE extension is under review on Open VSX; Stream Deck plugin 0.2.1 is pending Elgato review and will publish automatically after approval. Neither listing is public yet. Use the GitHub release installers while reviews are pending. Plugin 0.2.1 is a packaging update and works with IDE extension 0.2.0.
+Release 0.3.3 includes Stream Deck companion 0.3.3 and IDE extension 0.2.1. Install the GitHub release packages for the latest button-image and Quarto fixes. The IDE extension is also available on Open VSX; its registry version may lag the GitHub release. The Elgato Marketplace review is separate from the GitHub release.
 
 The [documentation website](https://janwein.github.io/positron-deck/) contains the full illustrated guide and every setting. The raw [settings reference](settings.json) is generated from the extension manifest.
 
 ## Installation and upgrade
 
-Install `positron-deck-0.2.0.vsix` from Extensions → Install from VSIX in Positron or in the Workbench session. Double-click the `.streamDeckPlugin` on the local Windows machine. Use compatible package versions; the Marketplace plugin 0.2.1 works with IDE extension 0.2.0. The original 32 action IDs, plugin UUIDs and default mappings are stable.
+Install `positron-deck-0.2.1.vsix` from Extensions → Install from VSIX in Positron or in the Workbench session. Double-click the `.streamDeckPlugin` on the local Windows machine. Use compatible package versions; Stream Deck companion 0.3.3 works with IDE extension 0.2.1. The original 32 action IDs, plugin UUIDs and default mappings are stable.
 
 No separate desktop companion service is required. The Stream Deck plugin is the companion. Install no server listener, reverse proxy or Kubernetes service.
 
