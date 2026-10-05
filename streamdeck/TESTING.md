@@ -23,3 +23,7 @@ The official Elgato CLI validates the produced package. The VSIX is built with `
 | Code, test or deployment failure | Relevant output is visible; no false success claim on hardware |
 
 Use a disposable project to test Git, formatting, runtime restart and deployment confirmations. No live deployment target is needed for installation acceptance.
+
+## Grouped-action acceptance
+
+Drag each of the 14 groups to a button and choose a function. Confirm that title, icon and hotkey match the selection after restarting Stream Deck. In Language Tools, Python must hide R package tools without switching the IDE runtime. Verify an old 0.2.1 button continues to run its original function. Verify selecting another function resets custom hotkeys. Record the physical demo using [the script](../docs/ELGATO-DEMO.md).
