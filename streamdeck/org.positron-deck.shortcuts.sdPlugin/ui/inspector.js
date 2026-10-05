@@ -1,5 +1,5 @@
 /* Only the Stream Deck application's local property-inspector connection is used. */
-let socket,context,manifestId,preset,group,actions=[],settings={},pendingSave=false;
+let socket,context,inspectorContext,manifestId,preset,group,actions=[],settings={},pendingSave=false,awaitingSave=false;
 const element=id=>document.getElementById(id);
 function choices(){
  const members=group?actions.filter(a=>group.commands.includes(a.command)):[];
@@ -39,11 +39,14 @@ function save(){
 }
 function flush(){
  if(!pendingSave||!socket||socket.readyState!==WebSocket.OPEN)return;
- socket.send(JSON.stringify({event:'setSettings',action:manifestId,context,payload:settings}));
- pendingSave=false;element('state').textContent='Settings updated.';
+ // Stream Deck routes messages from a property inspector by its registered UUID,
+ // not by the associated action instance's context (Elgato reference PI API).
+ pendingSave=false;awaitingSave=true;element('state').textContent='Saving settings…';
+ socket.send(JSON.stringify({event:'setSettings',context:inspectorContext,payload:settings}));
+ socket.send(JSON.stringify({event:'getSettings',context:inspectorContext}));
 }
 window.connectElgatoStreamDeckSocket=async function(port,uuid,registerEvent,info,actionInfo){
- const action=JSON.parse(actionInfo);context=action.context;manifestId=action.action;settings=action.payload.settings||{};
+ const action=JSON.parse(actionInfo);context=action.context;inspectorContext=uuid;manifestId=action.action;pendingSave=false;awaitingSave=false;settings=action.payload.settings||{};
  try{
   actions=await(await fetch('actions.json')).json();
   const groups=await(await fetch('groups.json')).json();
@@ -54,7 +57,7 @@ window.connectElgatoStreamDeckSocket=async function(port,uuid,registerEvent,info
   socket.onopen=()=>{socket.send(JSON.stringify({event:registerEvent,uuid}));// actionInfo already contains the saved settings. A second asynchronous read
    // could restore an older snapshot after a user has changed the dropdown.
    flush();};
-  socket.onmessage=event=>{let message;try{message=JSON.parse(event.data)}catch{return}if(message.event==='didReceiveSettings'&&message.context===context){if(pendingSave)return;settings=message.payload.settings||{};preset=resolve();if(preset)render();else element('state').textContent='Unknown function. Choose a function again.';}};
+  socket.onmessage=event=>{let message;try{message=JSON.parse(event.data)}catch{return}if(message.event==='didReceiveSettings'&&(message.context===context||message.context===inspectorContext)){if(pendingSave)return;const received=message.payload.settings||{};if(awaitingSave){if(Object.keys(settings).some(key=>received[key]!==settings[key]))return;awaitingSave=false;element('state').textContent='Settings saved.';}settings=received;preset=resolve();if(preset)render();else element('state').textContent='Unknown function. Choose a function again.';}};
   socket.onerror=()=>{element('state').textContent='Stream Deck connection unavailable.'};
  }catch{element('state').textContent='Could not load action settings.'}
 };
