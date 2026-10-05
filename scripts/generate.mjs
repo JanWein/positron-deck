@@ -4,6 +4,8 @@ process.chdir(fileURLToPath(new URL('..',import.meta.url)));
 const read=p=>JSON.parse(fs.readFileSync(p,'utf8'));
 const write=(p,v)=>fs.writeFileSync(p,JSON.stringify(v,null,2)+'\n');
 const actions=read('catalog/actions.json');
+const {createGroups}=await import('../streamdeck/scripts/groups.mjs');
+write('streamdeck/src/groups.json',createGroups(actions));
 const manifest=read('extension/package.json');
 manifest.version='0.2.0';manifest.repository={type:'git',url:'https://github.com/JanWein/positron-deck.git',directory:'extension'};
 manifest.homepage='https://janwein.github.io/positron-deck/';manifest.bugs={url:'https://github.com/JanWein/positron-deck/issues'};
@@ -16,7 +18,7 @@ write('extension/src/catalog.json',actions);write('streamdeck/src/actions.json',
 write('streamdeck/assets/extension-manifest.json',manifest);
 const fallback=actions.map(a=>({command:a.command,key:a.fallback,mac:a.fallback,when:a.when}));
 write('streamdeck/assets/keybindings-fallback.json',fallback);write('extension/docs/keybindings-fallback.json',fallback);write('docs/keybindings-fallback.json',fallback);
-const sp=read('streamdeck/package.json');sp.version='0.2.1';write('streamdeck/package.json',sp);
+const sp=read('streamdeck/package.json');sp.version='0.3.0';write('streamdeck/package.json',sp);
 for(const dir of ['extension','streamdeck']){const version=read(`${dir}/package.json`).version;const lock=read(`${dir}/package-lock.json`);lock.version=version;lock.packages[''].version=version;write(`${dir}/package-lock.json`,lock);}
 const header='# Action reference\n\nGenerated from `catalog/actions.json`. Host availability is checked at execution time. Positron actions may depend on the installed version or optional views.\n\n';
 const groups=[...new Set(actions.map(a=>a.group))];
