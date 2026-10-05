@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/assets/logo.svg" width="76" alt="Positron Deck logo"></p>
 <h1 align="center">Positron Deck</h1>
-Marketplace status (17 September 2026): the IDE extension is under review on Open VSX; Stream Deck plugin 0.2.1 is pending Elgato review and will publish automatically after approval. Neither listing is public yet. Use the GitHub release installers while reviews are pending. Plugin 0.2.1 is a packaging update and works with IDE extension 0.2.0.
+Companion 0.3.0 groups all 192 functions into 14 configurable actions. It is prepared for a revised Elgato submission; a live Windows demo is still required. Install the IDE extension from [Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck). Companion 0.3.0 works with IDE extension 0.2.0.
 
 <p align="center"><strong>Your work, at your fingertips.</strong><br>192 tactile shortcuts for Positron, a Stream Deck companion and a workflow toolkit.</p>
 <p align="center"><a href="https://janwein.github.io/positron-deck/">Documentation & interactive XL preview</a> · <a href="https://github.com/JanWein/positron-deck/releases/latest">Download both packages</a> · <a href="docs/COMMANDS.md">All actions</a></p>
@@ -10,7 +10,7 @@ Marketplace status (17 September 2026): the IDE extension is under review on Ope
 | Component | Purpose |
 |---|---|
 | 🧩 [IDE extension](extension/) | Positron / VS Code commands, keybindings, project detection and providers |
-| 🎛️ [Stream Deck companion](streamdeck/) | 192 ready-to-drag Windows hotkey actions, category icons and per-button settings |
+| 🎛️ [Stream Deck companion](streamdeck/) | 192 selectable Windows hotkey actions, category icons and per-button settings |
 | 🔁 [Workflows](docs/WORKFLOWS.md) | Six built-in recipes, a chooser and eight configurable workflow buttons |
 | 📖 [Documentation](https://janwein.github.io/positron-deck/) | Searchable action catalog, exact mappings, setup, compatibility and troubleshooting |
 
@@ -84,3 +84,7 @@ Hardware and graphical IDE acceptance remains necessary: Windows + Stream Deck, 
 See [testing](TESTING.md), [source research](docs/RESEARCH.md), [contributing](CONTRIBUTING.md) and [MIT license](LICENSE).
 
 Independent community project by Jan-Hendrik Weinert. Not affiliated with Posit or Elgato.
+
+## Configurable Stream Deck actions
+
+Companion 0.3.0 exposes 14 configurable groups with all 192 functions available in the property inspector. Language Tools includes R, Python and active-language options; Quarto has a dedicated group. Existing button IDs remain supported. See [companion setup](streamdeck/README.md) and the [60-second review demo script](docs/ELGATO-DEMO.md).
