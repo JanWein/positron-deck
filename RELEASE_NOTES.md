@@ -1,13 +1,15 @@
-Positron Deck 0.3.1 fixes function selection in the Stream Deck property inspector. This release includes both current installers:
+Positron Deck 0.3.2 fixes saving the selected function when switching between Stream Deck buttons. This release includes both current installers:
 
 | Component | Version | Install on |
 |---|---|---|
-| Stream Deck companion | 0.3.1 | Local Windows computer |
+| Stream Deck companion | 0.3.2 | Local Windows computer |
 | Positron / VS Code extension | 0.2.0 | Positron, VS Code or your remote Workbench session |
 
 ### What changed
 
-- Function selection stays selected instead of resetting to the first entry. The native dropdown is kept intact and changes made during connection setup are saved.
+- Settings writes from the property inspector now use its registered connection UUID, as in Elgato's reference implementation. Previously, writes addressed the button context and the selected function was lost when reopening the inspector.
+- Each save is read back from Stream Deck. The inspector displays "Settings saved" only after confirmation. Older responses cannot overwrite a newer selection while saving.
+- Regression tests reproduce the failure in 0.3.1 and cover selecting functions, saving them in the host profile, switching buttons and reopening each of the 14 groups.
 - Button titles follow the selected function. Common functions now have distinct symbols; other functions show a short function badge on their category icon.
 
 - All 192 functions are available through 14 groups: Code, Navigation, Editor, Data, Layout, Git, Terminal, Debug, Notebooks, Language Tools, Quarto, Apps, Deploy and Workflows.
