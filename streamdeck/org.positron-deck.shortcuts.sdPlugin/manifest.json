@@ -6,7 +6,7 @@
   "CategoryIcon": "imgs/category",
   "Author": "janweinert",
   "Description": "Ready-to-drag hotkey actions for Positron Deck. Windows only; no direct connection to the IDE.",
-  "Version": "0.3.0.0",
+  "Version": "0.3.1.0",
   "SDKVersion": 3,
   "Software": {
     "MinimumVersion": "7.1"
