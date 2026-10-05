@@ -1,4 +1,11 @@
 import test from 'node:test';import assert from 'node:assert/strict';import {WebSocketServer} from 'ws';import {spawn} from 'node:child_process';import path from 'node:path';
+function decodedImage(message) {
+ assert.match(message.payload.image,/^data:image\/svg\+xml;base64,[A-Za-z0-9+/]+=*$/);
+ assert.equal(message.payload.target,0);
+ const svg=Buffer.from(message.payload.image.split(',')[1],'base64').toString('utf8');
+ assert.match(svg,/<svg\b/);assert.match(svg,/xmlns="http:\/\/www.w3.org\/2000\/svg"/);
+ return svg;
+}
 test('built plugin connects to Elgato protocol and handles a button event on a non-Windows test host',{skip:process.platform==='win32',timeout:10000},async()=>{
  const server=new WebSocketServer({port:0,host:'127.0.0.1'});
  await new Promise(r=>server.once('listening',r));const port=server.address().port;
@@ -16,7 +23,7 @@ test('built plugin connects to Elgato protocol and handles a button event on a n
      const event={action:'org.positron-deck.shortcuts.runselection',context:'test-key',device:'test-xl',payload:{controller:'Keypad',coordinates:{column:0,row:1},settings:{},isInMultiAction:false,state:0}};
      socket.send(JSON.stringify({...event,event:'willAppear'}));socket.send(JSON.stringify({...event,event:'keyDown'}));
     }else if(message.event==='setTitle') {sawTitle=true;assert.equal(message.payload.title,'Push');}
-    else if(message.event==='setImage') {sawImage=true;assert.ok(message.payload.image.includes('<title>Git: Push</title>'));assert.ok(message.payload.image.includes('M36 48V12'));}
+    else if(message.event==='setImage') {sawImage=true;assert.ok(decodedImage(message).includes('<title>Git: Push</title>'));assert.ok(decodedImage(message).includes('M36 48V12'));}
     else if(message.event==='showAlert') {
      if(!legacyChecked){
       assert.equal(message.context,'test-key');legacyChecked=true;
@@ -49,8 +56,8 @@ test('function changes update the actual button title and icon through the SDK',
      }
      if(message.event==='setImage'){
       assert.ok(sawTitle);assert.equal(message.context,'code-key');
-      assert.ok(message.payload.image.includes(changed?'<title>Run File</title>':'<title>Run Selection or Line</title>'));
-      assert.ok(message.payload.image.includes(changed?'M19 47V10':'stroke-dasharray'));
+      assert.ok(decodedImage(message).includes(changed?'<title>Run File</title>':'<title>Run Selection or Line</title>'));
+      assert.ok(decodedImage(message).includes(changed?'M19 47V10':'stroke-dasharray'));
       if(changed){resolve();return;}
       changed=true;sawTitle=false;
       socket.send(JSON.stringify({...event,event:'didReceiveSettings',payload:{...event.payload,settings:{command:'positronDeck.runFile'}}}));
