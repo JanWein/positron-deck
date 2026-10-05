@@ -18,7 +18,7 @@ for(const arch of ['win32_x64','win32_arm64']) {
   await fs.copyFile(`node_modules/koffi/build/koffi/${arch}/koffi.node`,`${dest}/koffi.node`);
 }
 const manifest={
- $schema:'https://schemas.elgato.com/streamdeck/plugins/manifest.json',UUID:'org.positron-deck.shortcuts',Name:'Positron Deck',Category:'Positron Deck',CategoryIcon:'imgs/category',Author:'janweinert',Description:'Ready-to-drag hotkey actions for Positron Deck. Windows only; no direct connection to the IDE.',Version:'0.3.0.0',SDKVersion:3,Software:{MinimumVersion:'7.1'},OS:[{Platform:'windows',MinimumVersion:'10'}],Nodejs:{Version:'24'},CodePath:'bin/plugin.js',Icon:'imgs/plugin',PropertyInspectorPath:'ui/inspector.html',
+ $schema:'https://schemas.elgato.com/streamdeck/plugins/manifest.json',UUID:'org.positron-deck.shortcuts',Name:'Positron Deck',Category:'Positron Deck',CategoryIcon:'imgs/category',Author:'janweinert',Description:'Ready-to-drag hotkey actions for Positron Deck. Windows only; no direct connection to the IDE.',Version:'0.3.1.0',SDKVersion:3,Software:{MinimumVersion:'7.1'},OS:[{Platform:'windows',MinimumVersion:'10'}],Nodejs:{Version:'24'},CodePath:'bin/plugin.js',Icon:'imgs/plugin',PropertyInspectorPath:'ui/inspector.html',
  Actions:[...groups.map(g=>({UUID:g.uuid,Name:g.name,Tooltip:`Choose a ${g.name.toLowerCase()} function in the property inspector.`,Icon:`imgs/${g.iconId}-list`,Controllers:['Keypad'],SupportedInMultiActions:true,States:[{Image:`imgs/${g.iconId}-key`,Title:g.name,TitleAlignment:'bottom',FontSize:11}]})),...actions.map(p=>({UUID:p.uuid,VisibleInActionsList:false,Name:p.name,Tooltip:`${p.command}: ${p.shortcut}`,Icon:`imgs/${p.id}-list`,Controllers:['Keypad'],SupportedInMultiActions:true,States:[{Image:`imgs/${p.id}-key`,Title:p.title,TitleAlignment:'bottom',FontSize:11}]}))]
 };
 await fs.writeFile(`${dir}/manifest.json`,JSON.stringify(manifest,null,2)+'\n');
@@ -28,4 +28,4 @@ await fs.copyFile('assets/keybindings-fallback.json',`${dir}/keybindings-fallbac
 // Existing extension is a separate installation, never executed by the plugin.
 for(const name of ['README.md','LICENSE','THIRD-PARTY-NOTICES.txt','TESTING.md'])await fs.copyFile(name,`${dir}/${name}`);
 await fs.mkdir('.test-build',{recursive:true});
-for(const name of ['shortcuts','engine','windows','grouping'])await build({entryPoints:[`src/${name}.ts`],outfile:`.test-build/${name}.mjs`,bundle:true,platform:'node',format:'esm',target:'node24',external:['koffi']});
+for(const name of ['shortcuts','engine','windows','grouping','presentation'])await build({entryPoints:[`src/${name}.ts`],outfile:`.test-build/${name}.mjs`,bundle:true,platform:'node',format:'esm',target:'node24',external:['koffi']});
