@@ -23,12 +23,13 @@ streamDeck.actions.onKeyDown<Settings>(event=>{
     }
   })().catch(()=>streamDeck.logger.error('feedback.failed'));
 });
-async function refresh(event: {action: {manifestId:string;setTitle:(title:string)=>Promise<unknown>;setImage:(path:string)=>Promise<unknown>};payload:{settings:Settings}}) {
+async function refresh(event: {action: {manifestId:string;setTitle:(title:string,options?:{target:number})=>Promise<unknown>;setImage:(path:string,options?:{target:number})=>Promise<unknown>};payload:{settings:Settings}}) {
   if(!groups.some(g=>g.uuid===event.action.manifestId))return;
   const preset=resolvePreset(event.action.manifestId,event.payload.settings);
-  await event.action.setTitle(preset.title);
   const svg=readFileSync(new URL(`../imgs/${preset.id}-key.svg`,import.meta.url),'utf8');
-  await event.action.setImage(functionImage(svg,preset));
+  const image = `data:image/svg+xml;base64,${Buffer.from(functionImage(svg,preset),'utf8').toString('base64')}`;
+  // Target 0 updates both the physical key and the Stream Deck software preview.
+  await Promise.all([event.action.setTitle(preset.title,{target:0}),event.action.setImage(image,{target:0})]);
 }
 streamDeck.actions.onWillAppear<Settings>(event=>{void refresh(event).catch(()=>streamDeck.logger.warn('selection.refresh.failed'));});
 streamDeck.settings.onDidReceiveSettings<Settings>(event=>{void refresh(event).catch(()=>streamDeck.logger.warn('selection.refresh.failed'));});
