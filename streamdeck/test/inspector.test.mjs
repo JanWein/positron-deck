@@ -2,9 +2,9 @@ import test from 'node:test';import assert from 'node:assert/strict';import vm f
 test('property inspector registers itself but saves settings to the action context',async()=>{
  const elements=new Map();const handlers=new Map();const outgoing=[];let socket;
  const presets=JSON.parse(fs.readFileSync('src/actions.json','utf8'));
- function element(id){if(!elements.has(id))elements.set(id,{value:'',textContent:'',hidden:false,addEventListener:(event,fn)=>handlers.set(id+':'+event,fn)});return elements.get(id)}
+ function element(id){if(!elements.has(id))elements.set(id,{value:'',textContent:'',hidden:false,replaceChildren:(...children)=>{},addEventListener:(event,fn)=>handlers.set(id+':'+event,fn)});return elements.get(id)}
  class WebSocket{static OPEN=1;readyState=1;constructor(url){socket=this;assert.equal(url,'ws://127.0.0.1:12345')}send(value){outgoing.push(JSON.parse(value))}}
- const scope={window:{},document:{getElementById:element},WebSocket,fetch:async()=>({json:async()=>presets})};
+ const scope={window:{},document:{getElementById:element,createElement:()=>({})},WebSocket,fetch:async url=>({json:async()=>url==='actions.json'?presets:[]})};
  vm.runInNewContext(fs.readFileSync('org.positron-deck.shortcuts.sdPlugin/ui/inspector.js','utf8'),scope);
  await scope.window.connectElgatoStreamDeckSocket('12345','inspector-id','registerPropertyInspector','{}',JSON.stringify({action:presets[0].uuid,context:'button-id',payload:{settings:{}}}));
  socket.onopen();assert.deepEqual(outgoing[0],{event:'registerPropertyInspector',uuid:'inspector-id'});assert.equal(outgoing[1].context,'button-id');assert.equal(outgoing[1].action,presets[0].uuid);
