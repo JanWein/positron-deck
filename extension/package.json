@@ -2,7 +2,7 @@
   "name": "positron-deck",
   "displayName": "Positron Deck",
   "description": "Hotkey-driven development actions for Positron, Posit Workbench and VS Code.",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "publisher": "positron-deck",
   "license": "MIT",
   "engines": {
@@ -37,7 +37,7 @@
     "compile": "tsc --noEmit && node scripts/build.mjs",
     "lint": "eslint src",
     "test": "npm run compile && tsc && node --test test/*.test.cjs",
-    "package": "vsce package --no-rewrite-relative-links --out positron-deck-0.2.0.vsix",
+    "package": "vsce package --no-rewrite-relative-links --out positron-deck-0.2.1.vsix",
     "vscode:prepublish": "npm run compile",
     "test:integration": "npm run compile && node scripts/test-integration.cjs",
     "mapping": "node ../scripts/generate.mjs"
