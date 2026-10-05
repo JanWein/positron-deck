@@ -39,3 +39,12 @@ test('background and ambiguous task gates are rejected before saving',async()=>{
  for(const tasks of [[{name:'Check',isBackground:true}],[{name:'Check'},{name:'Check'}]]){
  const h=host({tasks});try{let saves=0;h.vscode.workspace.saveAll=async()=>{saves++;return true};const {runWorkflow}=require('../out/commands/workflows');const {Services}=require('../out/services');const s=new Services();await assert.rejects(runWorkflow({name:'Check',steps:[{save:'all'},{task:'Check'}]},{},s));assert.equal(saves,0);s.dispose();}finally{h.restore()}}
 });
+
+test('Insert Code Cell dispatches by active document even when both native commands exist',async()=>{
+ for(const [language,path,target] of [['quarto','/fixture/report.qmd','quarto.insertCodeCell'],['markdown','/fixture/report.QMD','quarto.insertCodeCell'],['r','/fixture/analysis.R','positron.insertCodeCell'],['python','/fixture/app.py','positron.insertCodeCell']]){
+  const h=host({available:['quarto.insertCodeCell','positron.insertCodeCell']});try{h.document.languageId=language;h.document.uri=h.uri(path);require('../out/extension').activate(h.context);await h.registered.get('positronDeck.insertCell')();assert.deepEqual(h.calls.filter(c=>c.id).map(c=>c.id),[target]);assert.deepEqual(h.messages,[]);}finally{h.restore()}
+ }
+});
+test('Insert Code Cell reports missing Quarto support without inserting a script delimiter',async()=>{
+ const h=host({available:['positron.insertCodeCell']});try{h.document.languageId='quarto';h.document.uri=h.uri('/fixture/report.qmd');require('../out/extension').activate(h.context);await h.registered.get('positronDeck.insertCell')();assert.ok(!h.calls.some(c=>c.id==='positron.insertCodeCell'));assert.match(h.messages[0],/quarto.insertCodeCell.*unavailable/);}finally{h.restore()}
+});
