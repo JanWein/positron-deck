@@ -87,4 +87,4 @@ Independent community project by Jan-Hendrik Weinert. Not affiliated with Posit 
 
 ## Configurable Stream Deck actions
 
-Companion 0.3.0 exposes 14 configurable groups with all 192 functions available in the property inspector. Language Tools includes R, Python and active-language options; Quarto has a dedicated group. Existing button IDs remain supported. See [companion setup](streamdeck/README.md) and the [60-second review demo script](docs/ELGATO-DEMO.md).
+Companion 0.3.0 exposes 14 configurable groups with all 192 functions available in the property inspector. Language Tools includes R, Python and active-language options; Quarto has a dedicated group. Existing button IDs remain supported. See [companion setup](streamdeck/README.md).
