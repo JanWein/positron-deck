@@ -1,12 +1,18 @@
 # Positron Deck Stream Deck companion
 
-Marketplace status (17 September 2026): the IDE extension is under review on Open VSX; Stream Deck plugin 0.2.1 is pending Elgato review and will publish automatically after approval. Neither listing is public yet. Use the GitHub release installers while reviews are pending. Plugin 0.2.1 is a packaging update and works with IDE extension 0.2.0.
+The companion exposes **14 configurable actions with 192 selectable functions**. Drag a group onto a button, then choose its function in the property inspector. The title and icon follow your selection. Windows 10+ x64/ARM64 and Stream Deck 7.1+ are required.
 
-192 ready-to-drag actions for Windows, synchronized with the Positron Deck IDE extension. Requires Windows 10+ x64/ARM64 and Stream Deck 7.1+.
+Version 0.3.0 addresses Elgato's review feedback. Marketplace approval is pending revision and a live Windows demo. The IDE extension is available on [Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck).
+
+Groups: Code, Navigation, Editor, Data, Layout, Git, Terminal, Debug, Notebooks, Language Tools, Quarto, Apps, Deploy and Workflows.
+
+**Language Tools** includes shared execution/testing/runtime commands plus existing R package tools. Choose Active file / runtime, R, Python or Other supported language to filter the menu. Python and other languages use the existing project-aware providers and native IDE commands. The selector does not change the active runtime or create support for an unsupported language. Quarto has Render, Preview and Quarto Workspace.
+
+Existing buttons remain functional through hidden legacy action IDs. New buttons use grouped actions. Changing a function resets a custom shortcut so an old override cannot accidentally run the previous function.
 
 [Documentation and XL preview](https://janwein.github.io/positron-deck/) · [Download](https://github.com/JanWein/positron-deck/releases/latest)
 
-Double-click `org.positron-deck.shortcuts.streamDeckPlugin`, install the matching 0.2.0 VSIX in Positron, and drag actions from the Positron Deck category onto buttons. Keep the correct IDE window or Workbench browser tab in the foreground. Every button can use the default, alternative mapping or a custom chord. The inspector displays its behavior and command ID.
+Double-click `org.positron-deck.shortcuts.streamDeckPlugin`, install the matching 0.2.0 VSIX in Positron, and drag one of the 14 grouped actions from the Positron Deck category onto a button and select its function. Keep the correct IDE window or Workbench browser tab in the foreground. Every button can use the default, alternative mapping or a custom chord. The inspector displays its behavior and command ID.
 
 The plugin sends Windows hotkeys using SendInput. No credentials, shell helper or IDE network connection is required. The Elgato SDK's ordinary local connection is used only to communicate with the Stream Deck application. Feedback signals input-injection failures, not IDE execution results. Window switching between chord strokes aborts the sequence; tab changes within one browser window cannot be detected.
 
