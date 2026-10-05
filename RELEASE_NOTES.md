@@ -1,14 +1,26 @@
-Positron Deck 0.2.0 expands the companion and IDE extension from 32 to 192 synchronized actions.
+Positron Deck 0.3.0 brings configurable Stream Deck actions. This release includes both current installers:
 
-- Full workspace navigation including Data Connections, classic Connections, Explorer, Search, Source Control and Extensions.
-- Native Ctrl+Enter-style execution, R/Python script cells, editor helpers, debugging and Positron notebook commands.
-- Dataframe inspection, plot history/export and native layout presets.
-- Six built-in workflows, eight configurable workflow slots and finite task completion gates.
-- Searchable documentation, interactive eight-page XL preview, category icons and exact command mappings.
-- Existing action IDs and hotkeys preserved; new actions use automated two-stroke chords.
+| Component | Version | Install on |
+|---|---|---|
+| Stream Deck companion | 0.3.0 | Local Windows computer |
+| Positron / VS Code extension | 0.2.0 | Positron, VS Code or your remote Workbench session |
 
-Install both assets below. The VSIX goes inside Positron or the Workbench session; the Stream Deck plugin goes on the local Windows computer. Windows 10+ x64/ARM64, Stream Deck 7.1+. Keep the intended IDE window/tab focused.
+### What changed
 
-Automated behavior/protocol tests and packaging validation do not replace local testing with real Positron runtimes, Workbench and Stream Deck hardware. New upstream-native features are capability-checked and may require newer Positron versions. No direct IDE network connection or live status feedback is included.
+- All 192 functions are available through 14 groups: Code, Navigation, Editor, Data, Layout, Git, Terminal, Debug, Notebooks, Language Tools, Quarto, Apps, Deploy and Workflows.
+- Choose a function in the property inspector. The button title and icon update automatically.
+- Language Tools provides filters for R, Python and other supported languages. Execution uses the active file and runtime in Positron.
+- Existing buttons keep their action IDs and hotkeys. Legacy actions are hidden from the action list but remain supported.
+- The website and setup guide explain the new configuration.
 
-Documentation: https://janwein.github.io/positron-deck/
+The IDE extension remains at 0.2.0 because its 192 commands and hotkeys are unchanged. It is the latest compatible version and is included here for a complete installation.
+
+### Installation
+
+Download both installers under Assets. Install `positron-deck-0.2.0.vsix` inside Positron or your Workbench session. Double-click `org.positron-deck.shortcuts.streamDeckPlugin` on Windows, then drag a group onto a button and choose its function.
+
+Requires Windows 10+ (x64 or ARM64) and Stream Deck 7.1+. Focus the intended IDE window or Workbench tab before pressing a button.
+
+Automated tests and official Elgato package validation pass. Practical testing with Windows, Positron runtimes and Stream Deck hardware remains necessary. The plugin sends local hotkeys and has no direct network connection to the IDE or live IDE status feedback.
+
+[Documentation](https://janwein.github.io/positron-deck/) · [IDE extension on Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck)
