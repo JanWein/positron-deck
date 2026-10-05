@@ -1,31 +1,14 @@
-Positron Deck 0.3.2 fixes saving the selected function when switching between Stream Deck buttons. This release includes both current installers:
+Positron Deck 0.3.3 fixes Insert Code Cell in Quarto documents and function-specific Stream Deck button images.
 
-| Component | Version | Install on |
-|---|---|---|
-| Stream Deck companion | 0.3.2 | Local Windows computer |
-| Positron / VS Code extension | 0.2.0 | Positron, VS Code or your remote Workbench session |
+| Component | Version |
+|---|---|
+| Positron / VS Code extension | 0.2.1 |
+| Stream Deck plugin | 0.3.3 |
 
-### What changed
+Install `positron-deck-0.2.1.vsix` in Positron or your remote Workbench session. Install the accompanying Stream Deck plugin 0.3.3 on Windows.
 
-- Settings writes from the property inspector now use its registered connection UUID, as in Elgato's reference implementation. Previously, writes addressed the button context and the selected function was lost when reopening the inspector.
-- Each save is read back from Stream Deck. The inspector displays "Settings saved" only after confirmation. Older responses cannot overwrite a newer selection while saving.
-- Regression tests reproduce the failure in 0.3.1 and cover selecting functions, saving them in the host profile, switching buttons and reopening each of the 14 groups.
-- Button titles follow the selected function. Common functions now have distinct symbols; other functions show a short function badge on their category icon.
+Insert Code Cell now calls `quarto.insertCodeCell` for Quarto `.qmd` documents and `positron.insertCodeCell` for R/Python scripts. Previously it always called the script-cell command, which did not insert a Quarto chunk. Both native commands may be installed at the same time; routing follows the active document rather than command availability. Missing Quarto support produces a clear error.
 
-- All 192 functions are available through 14 groups: Code, Navigation, Editor, Data, Layout, Git, Terminal, Debug, Notebooks, Language Tools, Quarto, Apps, Deploy and Workflows.
-- Choose a function in the property inspector. The button title and icon update automatically.
-- Language Tools provides filters for R, Python and other supported languages. Execution uses the active file and runtime in Positron.
-- Existing buttons keep their action IDs and hotkeys. Legacy actions are hidden from the action list but remain supported.
-- The website and setup guide explain the new configuration.
+The hotkey and existing Stream Deck button configuration remain unchanged. Regression tests cover Quarto language detection, the .qmd extension, R/Python scripts and missing Quarto support.
 
-The IDE extension remains at 0.2.0 because its 192 commands and hotkeys are unchanged. It is the latest compatible version and is included here for a complete installation.
-
-### Installation
-
-Download both installers under Assets. Install `positron-deck-0.2.0.vsix` inside Positron or your Workbench session. Double-click `org.positron-deck.shortcuts.streamDeckPlugin` on Windows, then drag a group onto a button and choose its function.
-
-Requires Windows 10+ (x64 or ARM64) and Stream Deck 7.1+. Focus the intended IDE window or Workbench tab before pressing a button.
-
-Automated tests and official Elgato package validation pass. Practical testing with Windows, Positron runtimes and Stream Deck hardware remains necessary. The plugin sends local hotkeys and has no direct network connection to the IDE or live IDE status feedback.
-
-[Documentation](https://janwein.github.io/positron-deck/) · [IDE extension on Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck)
+Function-specific button images are now sent as base64 SVG data URLs, with an explicit target for both hardware and software. Previously raw SVG strings could leave the category image unchanged. Protocol tests validate the encoded image format and decode it to verify the selected function artwork.

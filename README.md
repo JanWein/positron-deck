@@ -1,6 +1,6 @@
 <p align="center"><img src="docs/assets/logo.svg" width="76" alt="Positron Deck logo"></p>
 <h1 align="center">Positron Deck</h1>
-Companion 0.3.0 groups all 192 functions into 14 configurable actions. It is prepared for a revised Elgato submission; a live Windows demo is still required. Install the IDE extension from [Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck). Companion 0.3.0 works with IDE extension 0.2.0.
+Companion 0.3.3 groups all 192 functions into 14 configurable actions. Version 0.3.3 fixes function-specific button images and Quarto code-cell insertion. The recorded Windows demo is ready for the Elgato submission. Install the IDE extension from [Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck). Companion 0.3.3 works with IDE extension 0.2.1.
 
 <p align="center"><strong>Your work, at your fingertips.</strong><br>192 tactile shortcuts for Positron, a Stream Deck companion and a workflow toolkit.</p>
 <p align="center"><a href="https://janwein.github.io/positron-deck/">Documentation & interactive XL preview</a> · <a href="https://github.com/JanWein/positron-deck/releases/latest">Download both packages</a> · <a href="docs/COMMANDS.md">All actions</a></p>
@@ -28,10 +28,10 @@ Native features are version- and context-dependent. Run **Positron Deck: Check A
 ## Install
 
 1. Download both files from the [latest release](https://github.com/JanWein/positron-deck/releases/latest).
-2. In Positron, open **Extensions → ⋯ → Install from VSIX…** and select `positron-deck-0.2.0.vsix`. In Workbench, do this in your remote session.
+2. In Positron, open **Extensions → ⋯ → Install from VSIX…** and select `positron-deck-0.2.1.vsix`. In Workbench, do this in your remote session.
 3. On Windows, double-click `org.positron-deck.shortcuts.streamDeckPlugin`. Requires Stream Deck **7.1+**, Windows **10+**, x64 or ARM64.
 4. Drag actions from **Positron Deck** onto buttons. Focus the correct IDE window or Workbench browser tab, then press a button.
-5. First verify **Open Terminal** from the IDE Command Palette. Update both packages to 0.2.0 to use the new actions.
+5. First verify **Open Terminal** from the IDE Command Palette. Use IDE extension 0.2.1 with Stream Deck companion 0.3.3.
 
 Existing 0.1 action UUIDs, command IDs and default hotkeys remain unchanged. The VSIX publisher ID remains `positron-deck` for upgrade continuity; this is not a claim of Marketplace publication.
 
@@ -70,7 +70,7 @@ npm run package
 
 Outputs:
 
-- `extension/positron-deck-0.2.0.vsix`
+- `extension/positron-deck-0.2.1.vsix`
 - `streamdeck/dist/org.positron-deck.shortcuts.streamDeckPlugin`
 
 `catalog/actions.json` is the single source for action metadata. The generator produces both command catalogs, keybindings, plugin presets, icons and reference documentation. Custom provider logic is modular under `extension/src/`. No business-specific logic or target configuration is included.
@@ -87,4 +87,4 @@ Independent community project by Jan-Hendrik Weinert. Not affiliated with Posit 
 
 ## Configurable Stream Deck actions
 
-Companion 0.3.0 exposes 14 configurable groups with all 192 functions available in the property inspector. Language Tools includes R, Python and active-language options; Quarto has a dedicated group. Existing button IDs remain supported. See [companion setup](streamdeck/README.md).
+Companion 0.3.3 exposes 14 configurable groups with all 192 functions available in the property inspector. Language Tools includes R, Python and active-language options; Quarto has a dedicated group. Existing button IDs remain supported. See [companion setup](streamdeck/README.md).
