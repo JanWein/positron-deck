@@ -1,9 +1,9 @@
 <p align="center"><img src="docs/assets/logo.svg" width="76" alt="Positron Deck logo"></p>
 <h1 align="center">Positron Deck</h1>
-Companion 0.3.3 groups all 192 functions into 14 configurable actions. Version 0.3.3 fixes function-specific button images and Quarto code-cell insertion. The recorded Windows demo is ready for the Elgato submission. Install the IDE extension from [Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck). Companion 0.3.3 works with IDE extension 0.2.1.
+Positron Deck is available on both stores: get Stream Deck companion **0.3.3** from the [Elgato Marketplace](https://marketplace.elgato.com/product/positron-deck-b287cbb8-baec-4f5c-a249-8cdfc2732eca) and IDE extension **0.2.1** from [Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck). Both are free and open source. The companion groups 192 functions into 14 configurable actions and fixes function-specific button images; IDE extension 0.2.1 fixes Quarto code-cell insertion.
 
 <p align="center"><strong>Your work, at your fingertips.</strong><br>192 tactile shortcuts for Positron, a Stream Deck companion and a workflow toolkit.</p>
-<p align="center"><a href="https://janwein.github.io/positron-deck/">Documentation & interactive XL preview</a> · <a href="https://github.com/JanWein/positron-deck/releases/latest">Download both packages</a> · <a href="docs/COMMANDS.md">All actions</a></p>
+<p align="center"><a href="https://janwein.github.io/positron-deck/">Documentation & interactive XL preview</a> · <a href="https://marketplace.elgato.com/product/positron-deck-b287cbb8-baec-4f5c-a249-8cdfc2732eca">Elgato Marketplace</a> · <a href="https://open-vsx.org/extension/positron-deck/positron-deck">Open VSX</a> · <a href="docs/COMMANDS.md">All actions</a></p>
 
 ## What is inside?
 
@@ -27,13 +27,14 @@ Native features are version- and context-dependent. Run **Positron Deck: Check A
 
 ## Install
 
-1. Download both files from the [latest release](https://github.com/JanWein/positron-deck/releases/latest).
-2. In Positron, open **Extensions → ⋯ → Install from VSIX…** and select `positron-deck-0.2.1.vsix`. In Workbench, do this in your remote session.
-3. On Windows, double-click `org.positron-deck.shortcuts.streamDeckPlugin`. Requires Stream Deck **7.1+**, Windows **10+**, x64 or ARM64.
-4. Drag actions from **Positron Deck** onto buttons. Focus the correct IDE window or Workbench browser tab, then press a button.
-5. First verify **Open Terminal** from the IDE Command Palette. Use IDE extension 0.2.1 with Stream Deck companion 0.3.3.
+1. Get IDE extension **0.2.1** from [Open VSX](https://open-vsx.org/extension/positron-deck/positron-deck). To install the downloaded VSIX, open **Extensions → ⋯ → Install from VSIX…** in Positron. In Workbench, do this in your remote Positron session.
+2. Get Stream Deck companion **0.3.3** from the [Elgato Marketplace](https://marketplace.elgato.com/product/positron-deck-b287cbb8-baec-4f5c-a249-8cdfc2732eca) and follow its installation prompts. Requires Stream Deck **7.1+**, Windows **10+**, x64 or ARM64.
+3. Drag a group from **Positron Deck** onto a button and choose its function in the Property Inspector.
+4. First verify **Positron Deck: Open Terminal** from the IDE Command Palette. Focus the correct IDE window or Workbench browser tab before pressing a button.
 
-Existing 0.1 action UUIDs, command IDs and default hotkeys remain unchanged. The VSIX publisher ID remains `positron-deck` for upgrade continuity; this is not a claim of Marketplace publication.
+For manual installation, both packages remain available in the [latest GitHub release](https://github.com/JanWein/positron-deck/releases/latest): install `positron-deck-0.2.1.vsix` in Positron and double-click `org.positron-deck.shortcuts.streamDeckPlugin` on Windows.
+
+Existing 0.1 action UUIDs, command IDs and default hotkeys remain unchanged. The IDE extension identifier remains `positron-deck.positron-deck` for upgrade continuity.
 
 ## Architecture
 
